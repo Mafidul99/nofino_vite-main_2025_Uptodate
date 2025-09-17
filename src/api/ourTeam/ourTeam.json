@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Mafidul Islam",
+        "designation":{
+            "common":"Director & Co-Founder (CMD)"
+        },
+        "images":{
+            "png": "/assets/images/team/team-11.png",
+            "svg": "/assets/images/team/team-11.svg",
+            "alt": "team-11"
+        }
+    },
+    {
+        "id": "2",
+        "name": "Mohibul Hussain",
+        "designation":{
+            "common":"Director & Co-Founder (CEO)"
+        },
+        "images":{
+            "png": "/assets/images/team/team-1-2.png",
+            "svg": "/assets/images/team/team-1-2.svg",
+            "alt": "team-2"
+        }
+    },
+    {
+        "id": "3",
+        "name": "Imran Hussain",
+        "designation":{
+            "common":"Company Secretary (CS/CA)"
+        },
+        "images":{
+            "png": "/assets/images/team/tm-10.jpg",
+            "svg": "/assets/images/team/tm-10.svg",
+            "alt": "team-3"
+        }
+    },
+    {
+        "id": "4",
+        "name": "Zubair Ahmed",
+        "designation":{
+            "common":"Co-Founder (Founder)"
+        },
+        "images":{
+            "png": "/assets/images/team/tm-2.jpg",
+            "svg": "/assets/images/team/tm-2.svg",
+            "alt": "team-11"
+        }
+    },
+    {
+        "id": "5",
+        "name": "Investor",
+        "designation":{
+            "common":"Co-Founder (Investor)"
+        },
+        "images":{
+            "png": "/assets/images/team/tm-9.jpg",
+            "svg": "/assets/images/team/tm-9.svg",
+            "alt": "team-5"
+        }
+    },
+    {
+        "id": "6",
+        "name": "Investor",
+        "designation":{
+            "common":"Co-Founder (Investor)"
+        },
+        "images":{
+            "png": "/assets/images/team/tm-8.jpg",
+            "svg": "/assets/images/team/tm-8.svg",
+            "alt": "team-6"
+        }
+    }
+]

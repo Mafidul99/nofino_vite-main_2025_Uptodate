@@ -1,0 +1,309 @@
+
+[
+    {
+        "id": 1,
+        "image": "/images/jobes/jobes-1.jpg",
+        "date": "February 01, 2024",
+        "title": "Multitacking Jobs Vacancies In (head Office)",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    },
+     {
+        "id": 2,
+        "image": "/images/jobes/jobes-2.jpg",
+        "date": "February 01, 2024",
+        "title": "Receptionist Vacancies In (head Office) only Female",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    },
+     {
+        "id": 3,
+        "image": "/images/jobes/jobes-3.jpg",
+        "date": "February 01, 2024",
+        "title": "Collection Executive Vacancies In (head Office)",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    },
+     {
+        "id": 4,
+        "image": "/images/jobes/jobes-4.jpg",
+        "date": "February 01, 2024",
+        "title": "Office Boy Job Vacancies In (head Office)",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    },
+     {
+        "id": 5,
+        "image": "/images/jobes/jobes-5.jpg",
+        "date": "February 01, 2024",
+        "title": "Office Manager Job Vacancies In (head Office)",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    },
+     {
+        "id": 6,
+        "image": "/images/jobes/jobes-6.jpg",
+        "date": "February 01, 2024",
+        "title": "Comming Soon",
+        "discraption": "managing multiple tasks at once, such as switching between high-focus tasks and organizing time and workload.",
+        "experience": {
+            "junior": "0-2 Years experience: for Junior.",
+            "senior": "2+ Years experience for Senior."
+        },
+        "keyskills": "React Native, ReactJs, Redux, SDK Integration to achieve Native view controller, JS and Hybrid app development, Javascript, ES6, TypeScript, Knowledge of Android or IOS",
+        "rolesresponsibilities": {
+            "p1": "Proven experience in React/React native design guidelines, SDK and excellent JavaScript skills.",
+            "p2": "Exposure to building React Native components in native iOS and Android.",
+            "p3": "Knowledge of React and the Javascript ecosystem.",
+            "p4": "Familiarity with RESTful APIs development.",
+            "p5": "Expertise with code testing best practices, including unit, and integration testing to ensure quality of code.",
+            "p6": "Familiarity with code versioning tools such as Git, SVN, Github.",
+            "p7": "Firm grasp of the JavaScript language and its nuances, including ES7 syntax.",
+            "p8": "Build pixel-perfect, smooth UIs across both mobile platforms",
+            "p9": "Knowledge of how to embed React-Native in a native (iOS/Android) component and vice versa."
+        },
+        "PerksandBenefits":{
+            "per1":"Work from home till pandemic abates.",
+            "per2":"5 days working"
+        },
+        "salary":{
+            "salarybase": "80,000 to 1,00,000 BDT (Depends on Skill and Experience)",
+            "years": "Increment: Yearly"
+        },
+        "location": "Mirpur DOHS, Dhaka-1212",
+        "Jobtype": {
+            "full": "Full Time",
+            "haf": "Haf Time"
+        },
+        "postingdate": "2 Weeks ago",
+        "deadline":"22 June, 2023",
+        "Workinghrs": "8.00 AM to 5.00 PM",
+        "Workingdays": "Weekly 5 Days Weekend : Sat, Sun",
+        "vacancy": "No. Of Vacancy : 03",
+        "flags": {
+            "png": "/images/d3.png",
+            "png1": "/images/d2.png",
+            "png2": "/images/d1.png",
+            "png3": "/images/d6.png",
+            "png4": "/images/d2.png",
+            "png5": "/images/d.png",
+            "png6": "/images/dd2.png",
+            "alt": "jobes Flages Image"
+        }
+    }
+]
