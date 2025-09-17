@@ -4,7 +4,7 @@
 	// owl_carousel Home Page
 	 $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
-        margin: 20,
+        margin: 15,
         nav: false,
         loop: true,
         responsiveClass: true,
@@ -18,6 +18,10 @@
             items: 1
           },
           600: {
+            items: 1
+            
+          },
+          700: {
             items: 2
             
           },

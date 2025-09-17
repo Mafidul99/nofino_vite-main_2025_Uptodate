@@ -11,7 +11,7 @@ const MyCarouselOwlLoan = () => {
 
             <section className="sliderGold">
                 <div className="flex items-center justify-center w-full mt-4">
-                    <div className="flex-wrap justify-between max-w-[1200px] w-full items-center">
+                    <div className="flex-wrap justify-between max-w-[1200px] w-full items-center px-4">
                         <div className="flex w-[100%] items-center font-[500] font-roboto tracking-[2px] dark:bg-gray-700 bg-[#fff] h-auto border-[1px] border-gray-300 dark:border-0 shadow-xl rounded-[7px]">
                             <nav>
                                 <div className="nav nav-tabs" id="nav-tab" role="tablist">
@@ -24,18 +24,18 @@ const MyCarouselOwlLoan = () => {
                                 </div>
                             </nav>
                         </div>
-                        <div className="tab-content mt-4" id="nav-tabContent">
+                        <div className="mt-4 tab-content" id="nav-tabContent">
                             <div className="tab-pane fade show active" id="goldloan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
-                                    <div class="owl-carousel owl-theme grid-three-cols">
-                                        {GoldLoanData.map((goldLoanData, index) => {
+                                    <div class="owl-carousel owl-theme grid-cols-3 gap-2 lg:grid-cols-2 md:grid-rows-1">
+                                        {GoldLoanData.map((goldLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = goldLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
-                                                    <div className="SliderImage">
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id} >
+                                                    <div className="w-full SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
                                                         </NavLink>
@@ -45,43 +45,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr className="dark:text-[#D6D6D6]"/>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>
@@ -97,13 +97,13 @@ const MyCarouselOwlLoan = () => {
                             <div className="tab-pane fade show " id="productLoan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
                                     <div class="owl-carousel owl-theme grid-three-cols">
-                                        {ProductLoanData.map((prodLoanData, index) => {
+                                        {ProductLoanData.map((prodLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = prodLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id}>
                                                     <div className="SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
@@ -114,43 +114,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr />
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>
@@ -166,13 +166,13 @@ const MyCarouselOwlLoan = () => {
                             <div className="tab-pane fade show " id="businessLoan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
                                     <div class="owl-carousel owl-theme grid-three-cols">
-                                        {BusinessLoanData.map((businLoanData, index) => {
+                                        {BusinessLoanData.map((businLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = businLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id}>
                                                     <div className="SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
@@ -183,43 +183,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr />
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>
@@ -235,13 +235,13 @@ const MyCarouselOwlLoan = () => {
                             <div className="tab-pane fade show " id="groupLoan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
                                     <div class="owl-carousel owl-theme grid-three-cols">
-                                        {BusinessLoanData.map((businLoanData, index) => {
+                                        {BusinessLoanData.map((businLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = businLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id}>
                                                     <div className="SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
@@ -252,43 +252,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr />
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>
@@ -304,13 +304,13 @@ const MyCarouselOwlLoan = () => {
                             <div className="tab-pane fade show " id="personalLoan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
                                     <div class="owl-carousel owl-theme grid-three-cols">
-                                        {BusinessLoanData.map((businLoanData, index) => {
+                                        {BusinessLoanData.map((businLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = businLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id}>
                                                     <div className="SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
@@ -321,43 +321,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr />
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>
@@ -373,13 +373,13 @@ const MyCarouselOwlLoan = () => {
                             <div className="tab-pane fade show " id="vehicleLoan" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div className="flex w-[100%] font-roboto mt-4">
                                     <div class="owl-carousel owl-theme grid-three-cols">
-                                        {BusinessLoanData.map((businLoanData, index) => {
+                                        {BusinessLoanData.map((businLoanData) => {
                                             const {
                                                 id, loanType, interestRate, loanAmount,
                                                 tenure, features, eligibility, loanPurpose, processingFee, repaymentModes, image } = businLoanData;
                                             return (
 
-                                                <div className="card w-full flex items-center shadow-md dark:bg-gray-700" key={id}>
+                                                <div className="flex items-center w-full shadow-md card dark:bg-gray-700" key={id}>
                                                     <div className="SliderImage">
                                                         <NavLink href="#">
                                                             <img src={image} alt="thumb" />
@@ -390,43 +390,43 @@ const MyCarouselOwlLoan = () => {
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
                                                                 {loanType} </h2> <hr />
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
                                                             <span className="text-green-400 text[12px]"> {interestRate}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Amount : </span>
                                                             <span className="text-green-400 text[12px]"> {loanAmount}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Tenure : </span>
                                                             <span className="text-green-400 text[12px]"> {tenure}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Features : </span>
                                                             <span className="text-green-400 text[12px]"> {features}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Eligibility : </span>
                                                             <span className="text-green-400 text[12px]"> {eligibility}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Loan Purpose : </span>
                                                             <span className="text-green-400 text[12px]"> {loanPurpose}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Processing Fee : </span>
                                                             <span className="text-green-400 text[12px]"> {processingFee}</span>
                                                         </div>
-                                                        <div className="font-roboto pl-7 pr-4 pt-1">
+                                                        <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Re Payment Modes : </span>
                                                             <span className="text-green-400 text[12px]"> {repaymentModes}</span>
                                                         </div>
                                                     </div>
-                                                    <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                                                    <div className="flex items-center w-full pt-3 pb-3 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
                                                                 <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex w-full items-center text-white ">
+                                                                    <NavLink to="" className="flex items-center w-full text-white ">
                                                                         Read More
                                                                         <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
                                                                     </NavLink>

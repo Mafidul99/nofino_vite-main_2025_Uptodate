@@ -26,8 +26,8 @@ const GroupLoan = () => {
         </div>
         <div className="items-center w-full mt-[30px] mb-[40px] relative">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full px-4">
-            <div className="grid w-full grid-cols-3 gap-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1">
-              <div className="items-center mb-[0px] pb-[0px] relative">
+            <div className="grid w-full grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+              <div className="items-center mb-[0px] pb-[0px] relative md:col-span-2 lg:col-span-2 sm::col-span-2 xs:col-span-2">
                 <div className="items-center justify-center text-center shadow-md call-do-action-feature">
                   <TbHeadphonesFilled size={80} className="items-center justify-center w-full text-purple-600" />
                   <div className="text-green-600 font-roboto text-[25px] font-[700] py-2">
