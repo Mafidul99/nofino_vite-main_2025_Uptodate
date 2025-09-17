@@ -117,10 +117,10 @@ const Footers = () => {
          <div className="mx-auto max-w-[1200px] px-4 pt-5">
           <div className="grid grid-cols-3 gap-3 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 ">
             <div className='p-3'>
-               <div className="flex justify-center text-teal-600 lg:justify-start">
+               <div className="flex justify-start text-teal-600 lg:justify-center sm:justify-start">
                 <img src="assets/images/logo/logo-dark1.png" alt="mainLogo" />
               </div>
-              <p className="dark:text-[#D6D6D6] mt-3 max-w-md font-roboto text-[16px] leading-relaxed text-gray-600 sm:max-w-xs sm:text-left ">
+              <p className="dark:text-[#D6D6D6] mt-3 lg:text-center lg:max-w-full max-w-md font-roboto text-[16px] leading-relaxed text-gray-600 sm:max-w-xs sm:text-left ">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
                 cum itaque neque.
               </p>
@@ -261,7 +261,7 @@ const Footers = () => {
                             md:justify-center sm:text-center xs:text-center xs:text-[10px]">
                   {footerLink.map((footerLinks, index) => {
                     return (
-                      <Link className="inline-block px-2 w-full sm:px-[5px] transition hover:text-white xs:text-[10px] sm:text-[11px]" to={footerLinks.url} key={index} >
+                      <Link className="inline-block px-2 sm:px-[5px] transition hover:text-white xs:text-[10px] sm:text-[11px]" to={footerLinks.url} key={index} >
                         {footerLinks.name}
                       </Link>
                     );
