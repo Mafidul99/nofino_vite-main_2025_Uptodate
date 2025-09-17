@@ -68,7 +68,7 @@ const GetSupportCont = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center justify-center w-full mt-[40px]'>
+                <div className='flex items-center justify-center w-full mt-[35px]'>
                     <div className='flex justify-between items-center mx-auto max-w-[1200px] w-full px-4 py-3'>
                         <div className="w-[100%] grid gap-3 grid-cols-3  md:grid-cols-1 lg:gap-2 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 p-2">
                             {supportLinks.map((supportLink, index) => {
