@@ -248,10 +248,10 @@ const Footers = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5 dark:border-[#d6d6d6cb] border-t py-2.5 w-full px-5 bg-gray-600  dark:bg-gray-700 bottom-0 left-0 right-0">
-          <div className='mx-auto max-w-[1200px] w-full px-4 items-center '>
+        <div className="mt-5 dark:border-[#d6d6d6cb] border-t py-2.5 w-full xs:px-2 px-5 bg-gray-600  dark:bg-gray-700 bottom-0 left-0 right-0">
+          <div className='mx-auto max-w-[1200px] w-full px-4 items-center sm:px-2 sm:mx-1'>
             <div className='grid items-center w-full grid-cols-2 gap-1 md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1'>
-              <div className='flex w-full lg:md:justify-center md:sm:xs:text-center'>
+              <div className='flex w-full lg:md:justify-center md:text-center sm:text-center xs:text-center'>
                 <p className="capitalize text-white font-roboto text-[15px] lg:text-[13px] xs:text-[10px]">
                   Copyright &copy; 2023 Nofino Rural Finance all rights reserved.
                 </p>
@@ -261,7 +261,7 @@ const Footers = () => {
                             md:justify-center sm:text-center xs:text-center xs:text-[10px]">
                   {footerLink.map((footerLinks, index) => {
                     return (
-                      <Link className="inline-block pr-3 transition hover:text-white" to={footerLinks.url} key={index} >
+                      <Link className="inline-block px-2 w-full sm:px-[5px] transition hover:text-white xs:text-[10px] sm:text-[11px]" to={footerLinks.url} key={index} >
                         {footerLinks.name}
                       </Link>
                     );

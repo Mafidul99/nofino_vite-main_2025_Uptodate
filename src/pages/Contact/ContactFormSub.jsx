@@ -22,15 +22,14 @@ export const ContactFormSub = () => {
   const contSendEmail = async (e) => {
     e.preventDefault();
     setIsPanding(true)
-    await new Promise((res) => setTimeout
-    (res, 5000));
+    await new Promise((res) => setTimeout(res, 5000));
     setIsPanding(false);
     setFormData({ name: '', email: '', mobile: '', subject: '', message: '' });
 
 
-    const myServiceId = process.env.REACT_APP_MY_SERVICE_ID;
-    const myTemplateId = process.env.REACT_APP_MY_TEMPLATE_ID;
-    const myPublicKey = { publicKey: process.env.REACT_APP_MY_PUBLIC_KEY };
+      const myServiceId = (import.meta.env.VITE_APP_MY_SERVICE_ID);
+      const myTemplateId = (import.meta.env.VITE_APP_MY_TEMPLATE_ID);
+      const myPublicKey = { publicKey: (import.meta.env.VITE_APP_MY_PUBLIC_KEY)};
 
     emailjs.sendForm(myServiceId, myTemplateId, contForm.current, myPublicKey).then(
       () => {

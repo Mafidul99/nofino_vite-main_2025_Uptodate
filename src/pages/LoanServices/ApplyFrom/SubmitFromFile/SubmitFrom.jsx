@@ -61,9 +61,9 @@ const SubmitFrom = () => {
 
         };
         
-        const myServiceId = process.env.REACT_APP_MY_SERVICE_ID;
-        const myTemplateId = process.env.REACT_APP_MY_TEMPLATE_ID;
-        const myPublicKey = { publicKey: process.env.REACT_APP_MY_PUBLIC_KEY };
+        const myServiceId = (import.meta.env.VITE_APP_MY_SERVICE_ID);
+        const myTemplateId = (import.meta.env.VITE_APP_MY_TEMPLATE_ID);
+        const myPublicKey = { publicKey: (import.meta.env.VITE_APP_MY_PUBLIC_KEY)};
 
         emailjs.sendForm(myServiceId, myTemplateId, templateParams, formData.current, myPublicKey).then(
             () => {
