@@ -5,10 +5,14 @@ import App from './App.jsx'
 import '@fontsource/roboto';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Provider } from "react-redux";   // ✅ import Provider
+import { store } from "./redux/store";    // ✅ import our store 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
     <ToastContainer 
       position="top-right"
       toastClassName="toastbody"

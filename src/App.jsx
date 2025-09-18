@@ -18,8 +18,6 @@ import RefundPolicy from './pages/Policy/RefundPolicy'
 import Faq from './pages/Others/Faq'
 import Support from './pages/Others/Support'
 import { ThemeProvider } from './context/ThemeContext'
-import RdCalculator from './Calculators/RdCalculator'
-import FdCalculator from './Calculators/FdCalculator'
 import PersonalLoan from './pages/LoanServices/PersonalLoan'
 import BusinessLoan from './pages/LoanServices/BusinessLoan'
 import GroupLoan from './pages/LoanServices/GroupLoan'
@@ -43,6 +41,8 @@ import BlApplyFrom from './pages/LoanServices/ApplyFrom/BL/BlApplyFrom'
 import ProApplyFrom from './pages/LoanServices/ApplyFrom/ProL/ProApplyFrom'
 import GropApplyFrom from './pages/LoanServices/ApplyFrom/GL/GropApplyFrom'
 import VehiApplyFrom from './pages/LoanServices/ApplyFrom/LAVehi/VehiApplyFrom'
+import FdCalculator from './pages/Calculators/FdCalculator'
+import RdCalculator from './pages/Calculators/RdCalculator'
 
 const router = createBrowserRouter([
   {

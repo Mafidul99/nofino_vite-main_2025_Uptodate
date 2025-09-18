@@ -113,7 +113,7 @@ const Footers = () => {
       {/* <FooterMenu/> */}
 
 
-      <footer className="mt-4 bg-gray-300 dark:bg-gray-700 footer font-roboto">
+      <footer className="mt-4 bg-gray-100 dark:bg-gray-700 footer font-roboto">
          <div className="mx-auto max-w-[1200px] px-4 pt-5">
           <div className="grid grid-cols-3 gap-3 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 ">
             <div className='p-3'>
