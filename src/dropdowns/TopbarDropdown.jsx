@@ -21,6 +21,11 @@ const TopbarDropdown = () => {
             url: "/rd-calculator"
 
         },
+        {
+            name: "EMI Calculator",
+            url: "/loan-emi-calculator"
+
+        },
     ]
 
     return (
@@ -41,8 +46,7 @@ const TopbarDropdown = () => {
                         {calLinks.map((calLink, index) => {
                             return (
                                 <Link to={calLink.url}
-                                    className="block px-4 py-2 font-roboto text-sm text-gray-700 dark:text-white dark:hover:text-green-500
-                                         hover:text-green-500" role="menuitem">
+                                    className="block px-4 py-2 text-sm text-gray-700 font-roboto dark:text-white dark:hover:text-green-500 hover:text-green-500" role="menuitem" key={index}>
                                     {calLink.name}
                                 </Link>
                             );

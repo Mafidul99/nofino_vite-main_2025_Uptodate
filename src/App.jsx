@@ -43,6 +43,7 @@ import GropApplyFrom from './pages/LoanServices/ApplyFrom/GL/GropApplyFrom'
 import VehiApplyFrom from './pages/LoanServices/ApplyFrom/LAVehi/VehiApplyFrom'
 import FdCalculator from './pages/Calculators/FdCalculator'
 import RdCalculator from './pages/Calculators/RdCalculator'
+import LoanEMICalculator from './pages/Calculators/LoanEMICalculator'
 
 const router = createBrowserRouter([
   {
@@ -121,6 +122,11 @@ const router = createBrowserRouter([
       {
         path: "/fd-calculator",
         element: <FdCalculator/>,
+
+      },
+      {
+        path: "/loan-emi-calculator",
+        element: <LoanEMICalculator/>,
 
       },
       {
