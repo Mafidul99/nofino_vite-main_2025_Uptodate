@@ -87,9 +87,9 @@ function FdInvesmentCalc() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full h-full col-span-2">
+                    <div className="flex flex-col items-center justify-center w-full h-full col-span-2 ">
                         {result.length > 0 && (
-                            <div className="w-full max-w-3xl">
+                            <div className="w-full max-w-3xl ">
                                 <div className="p-4 mt-6 space-y-2 text-center bg-green-100 rounded-lg shadow dark:bg-gray-300 font-roboto">
                                     <p className='font-bold text-red-500 font-roboto text-[18px]'>
                                         <strong>Total Interest: </strong>

@@ -30,9 +30,9 @@ export default function FdEMICalculator() {
             <div className="min-h-screen flex flex-col items-center justify-center font-roboto">
                 <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-4 py-4">
                     <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 pb-2">FD Calculator</h1>
-                    <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 lg:gap-2 lg:px-3 px-3 py-3">
+                    <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 lg:gap-2 lg:px-3 px-3 py-3">
                         {/* Left: Inputs */}
-                        <div className="md:col-span-3">
+                        <div className="md:col-span-3 w-full lg:col-span-2 items-center">
                             <div className="mb-4">
                                 <label className="block font-medium dark:text-white">Compounding Frequency</label>
                                 <select
@@ -80,30 +80,30 @@ export default function FdEMICalculator() {
                                     className="w-72 text-lg bg-green-500 text-white py-2.5 rounded-lg hover:bg-green-600 shadow-md transition"
                                     onClick={calculateFD}
                                 >
-                                    Calculate
+                                    Calculate Maturity
                                 </button>
                             </div>
                         </div>
 
                         {/* Right: Pie Chart */}
-                        <div className="md:col-span-4 flex flex-col items-center h-full justify-center">
+                        <div className="md:col-span-4 col-span-2 flex flex-col items-center h-full justify-center">
                             {maturity > 0 && (
-                                <div className="mt-6 p-4 bg-green-100 dark:bg-gray-300 font-roboto rounded-lg text-center space-y-2">
+                                <div className="mt-6 p-4 bg-green-100 dark:bg-gray-300 font-roboto border rounded-lg w-full text-center space-y-2">
                                     <h2 className="text-lg font-semibold">Your RD Calculator :</h2>
                                     <p className="text-[27px] font-bold text-green-600 dark:text-[#008d8d]">
                                         ₹ {maturity}
                                     </p>
                                     <p className="text-gray-900">
                                         <strong>Principal Amount:</strong> ₹
-                                        {/* {totalInterest} */} {principal}
+                                        {principal}
                                     </p>
                                     <p className="text-red-500">
                                         <strong>Total Interest:</strong> ₹
-                                        {/* {totalInterest} */} {interest}
+                                        {interest}
                                     </p>
                                     <p className="text-gray-800">
                                         <strong>Total Payment (Principal + Interest):</strong> ₹{" "}
-                                        {/* {totalPayment} */} {maturity}
+                                        {maturity}
                                     </p>
                                 </div>
                             )}
@@ -130,7 +130,7 @@ export default function FdEMICalculator() {
                                     </PieChart>
                                 </ResponsiveContainer>
                             ) : (
-                                <p className="text-center p-4 border-dashed border-2 rounded-lg border-gray-300 h-full flex items-center justify-center text-gray-600 dark:text-white">
+                                <p className="text-center p-4 border-dashed border-2 w-full rounded-lg border-gray-300 h-full flex items-center justify-center text-gray-600 dark:text-white">
                                     Enter values and calculate EMI to see breakdown.
                                 </p>
                             )}

@@ -46,7 +46,7 @@ function SIPInvesmentCalc() {
     };
 
     const chartData = result && {
-        labels: ["Invested Amount", "Interest Earned", "Maturity Amount"],
+        labels: ["Invested Amount", "Interest Earned", "Maturity Amount"],        
         datasets: [
             {
                 data: [result.investedAmount, result.interestEarned, result.maturityAmount],
@@ -104,7 +104,7 @@ function SIPInvesmentCalc() {
                                             onClick={handleSubmit}
                                             className="block px-4 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
                                         >
-                                            Calculate
+                                            Calculate SIP
                                         </button>
                                     </div>
                                 </form>
@@ -115,8 +115,8 @@ function SIPInvesmentCalc() {
                             {result ? (
                                 <div className="w-full flex flex-col md:flex-row sm:flex-col sm:gap-4 gap-8 items-center justify-center">
                                     {/* Doughnut Chart */}
-                                    <div className="w-full max-w-xs">
-                                        <Doughnut data={chartData} />
+                                    <div className="w-full max-w-xs dark:text-[#fff]">
+                                        <Doughnut data={chartData}/>
                                     </div>
 
                                     {/* Results */}

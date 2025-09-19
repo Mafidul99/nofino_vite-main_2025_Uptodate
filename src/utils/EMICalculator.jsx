@@ -28,9 +28,9 @@ export default function EMICalculator() {
     <div className="flex flex-col items-center justify-center min-h-screen my-4 font-roboto">
       <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-4 py-4 ">
         <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 pb-2">Loan EMI Calculator</h1>
-        <div className="grid grid-cols-2 gap-4 px-3 py-3 lg:grid-cols-2 lg:gap-2 lg:px-3">
+        <div className="grid grid-cols-3 gap-4 px-3 py-3 lg:grid-cols-2 lg:gap-2 lg:px-3">
           {/* Left: Inputs */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 w-full lg:col-span-2 items-center">
             <div className="mb-4">
               <label className="block font-medium dark:text-white">Loan Amount (₹)</label>
               <input
@@ -158,15 +158,15 @@ export default function EMICalculator() {
                 onClick={() => dispatch(calculateEMI())}
                 className="w-72 text-lg bg-green-500 text-white py-2.5 rounded-lg hover:bg-green-600 shadow-md transition"
               >
-                Calculate
+                EMI Calculate
               </button>    
             </div>        
           </div>
 
           {/* Right: Pie Chart */}
-          <div className="flex flex-col items-center justify-center h-full md:col-span-4">
+          <div className="md:col-span-4 col-span-2 flex flex-col items-center h-full justify-center">
             {emi > 0 && (
-              <div className="p-4 mt-6 space-y-2 text-center bg-green-100 rounded-lg dark:bg-gray-300 font-roboto">
+              <div className="p-4 mt-6 space-y-2 text-center bg-green-100 rounded-lg w-full dark:bg-gray-300 font-roboto">
                 <h2 className="text-lg font-semibold">Your EMI Calculator :</h2>
                 <p className="text-[27px] font-bold text-green-600 dark:text-[#008d8d]">₹ {emi}</p>
 
@@ -202,7 +202,7 @@ export default function EMICalculator() {
                 </PieChart>
               </ResponsiveContainer>
             ) : (
-              <p className="flex items-center justify-center h-full p-4 text-center text-gray-600 border-2 border-gray-300 border-dashed rounded-lg dark:text-white">
+              <p className="flex items-center justify-center h-full p-4 w-full text-center text-gray-600 border-2 border-gray-300 border-dashed rounded-lg dark:text-white">
                 Enter values and calculate EMI to see breakdown.
               </p>
             )}

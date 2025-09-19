@@ -98,7 +98,7 @@ function RdInvesmentCalc() {
                       type="submit"
                       className="block px-4 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
                     >
-                      Calculate
+                      Calculate RD
                     </button>
                   </div>
                 </div>
