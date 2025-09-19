@@ -36,7 +36,7 @@ function FdInvesmentCalc() {
 
     return (
         <div className="flex flex-col items-center min-h-screen p-6">
-            <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-4 py-4">
+            <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
                 <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">FD Investment Plan (Compound Interest)</h1>
                 <div className="grid grid-cols-4 gap-4 px-3 py-3 md:grid-cols-2 md:gap-2 md:px-1 md:py-1">
                     <div className="items-center w-full col-span-2 p-6 mb-8 md:col-span-4 md:p-2">

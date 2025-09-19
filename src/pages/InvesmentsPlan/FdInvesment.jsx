@@ -19,7 +19,7 @@ const FdInvesment = () => {
           </div>
         </div>
         <div className="items-center w-full my-4">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full px-4">
+          <div className="flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full">
             <div className="w-[100%] grid gap-2 grid-cols-1">
               <FdInvesmentCalc/>
             </div>
