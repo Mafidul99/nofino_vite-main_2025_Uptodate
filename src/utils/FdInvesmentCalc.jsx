@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { PieChart, Pie, Tooltip, Legend, ResponsiveContainer, Cell } from "recharts";
+import DataTable from 'datatables.net-react';
+import DT from 'datatables.net-bs5';
+import 'datatables.net-select-dt';
+import 'datatables.net-responsive-dt';
 
 function FdInvesmentCalc() {
     const [principal, setPrincipal] = useState(10000);
@@ -20,13 +24,14 @@ function FdInvesmentCalc() {
                 year,
                 interest: interest.toFixed(2),
                 total: currentAmount.toFixed(2),
-                
+
             });
         }
 
-        setResult(data);        
-        
+        setResult(data);
+
     };
+    DataTable.use(DT);
 
     const chartData = [
         { name: "Principal", value: Number(principal) },
@@ -37,7 +42,8 @@ function FdInvesmentCalc() {
     return (
         <div className="flex flex-col items-center min-h-screen p-6">
             <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
-                <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">FD Investment Plan (Compound Interest)</h1>
+                <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
+                        FD Investment Plan (Compound Interest)</h1>
                 <div className="grid grid-cols-4 gap-4 px-3 py-3 md:grid-cols-2 md:gap-2 md:px-1 md:py-1">
                     <div className="items-center w-full col-span-2 p-6 mb-8 md:col-span-4 md:p-2">
                         <div className="mb-4">
@@ -86,12 +92,12 @@ function FdInvesmentCalc() {
                             <div className="w-full max-w-3xl">
                                 <div className="p-4 mt-6 space-y-2 text-center bg-green-100 rounded-lg shadow dark:bg-gray-300 font-roboto">
                                     <p className='font-bold text-red-500 font-roboto text-[18px]'>
-                                        <strong>Total Interest: </strong> 
-                                         ₹{result.reduce((acc, row) => acc + parseFloat(row.interest), 0).toFixed(2)}
-                                        </p>
+                                        <strong>Total Interest: </strong>
+                                        ₹{result.reduce((acc, row) => acc + parseFloat(row.interest), 0).toFixed(2)}
+                                    </p>
                                     <p className='font-bold text-green-500 font-roboto text-[20px]'>
-                                        <strong>Maturity Amount: </strong> 
-                                         ₹{result[result.length - 1].total}
+                                        <strong>Maturity Amount: </strong>
+                                        ₹{result[result.length - 1].total}
                                     </p>
                                 </div>
                             </div>
@@ -125,26 +131,31 @@ function FdInvesmentCalc() {
                         )}
                     </div>
 
-                    <div className="w-full col-span-4 pt-3">
-                        { result.length > 0 ? (
-                        <table className="items-center w-full overflow-hidden text-center rounded dark:bg-gray-300">
-                            <thead className="items-center justify-center w-full text-center text-white bg-green-600 justify-items-center ">
-                                <tr>
-                                    <th className="px-4 py-3">Tenure (Years)</th>
+                    <div className="w-full col-span-4 pt-3 dark:text-white">
+                        {result.length > 0 ? (
+                            <DataTable className="display rounded-md overflow-hidden"
+                            options={{
+                                pagination: true,
+                                responsive: true,
+                            }}
+                            >
+                                <thead className='text-white bg-green-600 rounded shadow items-center text-center'>
+                                    <tr>
+                                       <th className="px-4 py-3">Tenure (Years)</th>
                                     <th className="px-4 py-3">Interest Earned (₹)</th>
                                     <th className="px-4 py-3">Total Amount (₹)</th>
-                                </tr>
-                            </thead>
-                            <tbody >
+                                    </tr>
+                                </thead>
+                                <tbody >
                                 {result.map((row) => (
-                                    <tr key={row.year} className="border-t">
+                                    <tr key={row.year} className="border-t text-center rounded-md">
                                         <td className="px-4 py-2">{row.year}</td>
                                         <td className="px-4 py-2">{row.interest}</td>
                                         <td className="px-4 py-2">{row.total}</td>
                                     </tr>
                                 ))}
                             </tbody>
-                        </table>
+                            </DataTable>                        
                         ) : (
                             <p className="flex items-center justify-center h-full p-4 text-center text-gray-600 capitalize dark:text-white">
                                 Enter values and calculate Data Table Showdown.
