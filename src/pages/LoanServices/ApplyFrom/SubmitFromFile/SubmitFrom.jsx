@@ -1,8 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import Loader from '../../../../components/Layouts/Loader';
 
 const SubmitFrom = () => {
+    const [isPending, setIsPending] = useState(true);
     const [currentStep, setCurrentStep] = useState(1);
 
     const nextStep = () => {
@@ -76,16 +78,28 @@ const SubmitFrom = () => {
 
     }
 
+    useEffect(() => {
+            const loadApp = async () => {
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              setIsPending(false);
+            };
+        
+            loadApp();
+          }, []);
+          if (isPending) {
+                return <Loader />;
+              }
+
     const renderStep = () => {
         switch (currentStep) {
             case 1:
                 return (
                     <div>
                         <div className="border-[1px] dark:border-[#D6D6D6] border-green-300 border-dashed rounded-md p-4">
-                            {/* <h2 className="text-2xl font-bold mb-4">Loan Details</h2> */}
-                            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 mb-3">
+                            {/* <h2 className="mb-4 text-2xl font-bold">Loan Details</h2> */}
+                            <div className="grid grid-cols-2 gap-4 mb-3 md:grid-cols-1">
                                 <div className="flex flex-col">
-                                    <label htmlFor="loan-amount" className="mb-2 items-center justify-center">
+                                    <label htmlFor="loan-amount" className="items-center justify-center mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Loan Amount</span>
                                         <span className='text-red-500 text-[18px]'> * </span>
                                         <span className='text-[12px] font-[700] text-red-500 dark:text-[#D6D6D6]'> Rs. 20000/- & 50000/-</span>
@@ -132,7 +146,7 @@ const SubmitFrom = () => {
                             </div>
                         </div>
                         <div className="flex justify-between mt-4">
-                            <button onClick={nextStep} className="bg-green-500 text-white px-4 py-2 shadow-md rounded">Next</button>
+                            <button onClick={nextStep} className="px-4 py-2 text-white bg-green-500 rounded shadow-md">Next</button>
                         </div>
                     </div>
                 );
@@ -140,8 +154,8 @@ const SubmitFrom = () => {
                 return (
                     <div>
                         <div className="border-[1px] dark:border-[#D6D6D6] border-green-300 border-dashed rounded-md p-4">
-                            {/* <h2 className="text-2xl font-bold mb-4">Step 2: Address Details</h2> */}
-                            <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+                            {/* <h2 className="mb-4 text-2xl font-bold">Step 2: Address Details</h2> */}
+                            <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
                                 <div className="flex flex-col">
                                     <label htmlFor="user-Name" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Your Name</span>
@@ -167,7 +181,7 @@ const SubmitFrom = () => {
                                         placeholder='Enter Mother Name' required autoComplete="off" />
                                 </div>
                             </div>
-                            <div className="grid grid-cols-4 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1 mb-4">
+                            <div className="grid grid-cols-4 gap-4 mt-2 mb-4 lg:grid-cols-2 md:grid-cols-1">
                                 <div className="flex flex-col">
                                     <label htmlFor="email" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Email Address</span>
@@ -285,8 +299,8 @@ const SubmitFrom = () => {
                             </div>
                         </div>
                         <div className="flex justify-between mt-4">
-                            <button onClick={prevStep} className="bg-gray-400 text-white px-4 py-2 shadow-md rounded">Previous</button>
-                            <button onClick={nextStep} className="bg-green-500 text-white px-4 py-2 shadow-md rounded">Next</button>
+                            <button onClick={prevStep} className="px-4 py-2 text-white bg-gray-400 rounded shadow-md">Previous</button>
+                            <button onClick={nextStep} className="px-4 py-2 text-white bg-green-500 rounded shadow-md">Next</button>
                         </div>
                     </div>
                 );
@@ -294,8 +308,8 @@ const SubmitFrom = () => {
                 return (
                     <div>
                         <div className="border-[1px] dark:border-[#D6D6D6] border-green-300 border-dashed rounded-md p-4">
-                            {/* <h2 className="text-2xl font-bold mb-4">Step 2: Address Details</h2> */}
-                            <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+                            {/* <h2 className="mb-4 text-2xl font-bold">Step 2: Address Details</h2> */}
+                            <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
                                 <div className="flex flex-col">
                                     <label htmlFor="account-number" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Account Number</span>
@@ -321,7 +335,7 @@ const SubmitFrom = () => {
                                         placeholder="Enter Branch Name" required autoComplete="off" />
                                 </div>
                             </div>
-                            <div className="grid grid-cols-4 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-4 mb-4">
+                            <div className="grid grid-cols-4 gap-4 mt-4 mb-4 lg:grid-cols-2 md:grid-cols-1">
                                 <div className="flex flex-col col-span-2 md:col-span-1">
                                     <label htmlFor="address" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>House No/Name</span>
@@ -379,8 +393,8 @@ const SubmitFrom = () => {
                             </div>
                         </div>
                         <div className="flex justify-between mt-4">
-                            <button onClick={prevStep} className="bg-gray-400 text-white px-4 py-2 shadow-md rounded">Previous</button>
-                            <button onClick={nextStep} className="bg-green-500 text-white px-4 py-2 shadow-md rounded">Next</button>
+                            <button onClick={prevStep} className="px-4 py-2 text-white bg-gray-400 rounded shadow-md">Previous</button>
+                            <button onClick={nextStep} className="px-4 py-2 text-white bg-green-500 rounded shadow-md">Next</button>
                         </div>
                     </div>
                 );
@@ -388,8 +402,8 @@ const SubmitFrom = () => {
                 return (
                     <div>
                         <div className="border-[1px] dark:border-[#D6D6D6] border-green-300 border-dashed rounded-md p-4">
-                            {/* <h2 className="text-2xl font-bold mb-4">Step 3: Confirmation</h2> */}
-                            <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+                            {/* <h2 className="mb-4 text-2xl font-bold">Step 3: Confirmation</h2> */}
+                            <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
                                 <div className="flex flex-col">
                                     <label htmlFor="file-pan" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Pan Card</span>
@@ -451,13 +465,13 @@ const SubmitFrom = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-4 mt-4">
                                 <div className="flex flex-col justify-start mb-2">
-                                    <input type="checkbox" id="declaration" name="declaration" className="inline mb-2 border border-gray-300 p-2 rounded w-6 h-6" required autoComplete="off" />
+                                    <input type="checkbox" id="declaration" name="declaration" className="inline w-6 h-6 p-2 mb-2 border border-gray-300 rounded" required autoComplete="off" />
                                     <span className='text-[15px] font-[500] dark:text-[#D6D6D6] inline-block'> I hereby declare that all the information given above is true and correct to the best of my knowledge. All the information shared in the Loan request is correct, and I take full responsibility for its correctness. I solemnly declare that the information in this Loan request is true to the best of my knowledge and belief.</span>
                                 </div>
                             </div>
                         </div>
                         <div className="flex justify-between mt-4">
-                            <button onClick={prevStep} className="bg-gray-400 text-white px-4 py-2 shadow-md rounded">Previous</button>
+                            <button onClick={prevStep} className="px-4 py-2 text-white bg-gray-400 rounded shadow-md">Previous</button>
                             <button type="submit" className="text-white bg-gradient-to-r from-green-400 via-green-500
                                 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none rounded
                                 focus:ring-green-300 dark:focus:ring-green-800 shadow-md shadow-green-500/50 dark:shadow-md

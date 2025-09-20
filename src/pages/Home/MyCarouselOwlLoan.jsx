@@ -1,10 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigation } from "react-router-dom";
 import GoldLoanData from "../../api/goldLoanData.json";
 import ProductLoanData from "../../api/productLoanData.json";
 import BusinessLoanData from "../../api/businessLoanData.json";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const MyCarouselOwlLoan = () => {
+    const navigation = useNavigation();
+    const isLoading = navigation.state === 'loading';
+    
+     {isLoading && <Loader />}
     return (
         <>
 

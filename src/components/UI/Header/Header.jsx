@@ -25,7 +25,7 @@ const Header = () => {
     const links = [
         {
             name: "Home",
-            url:"/"
+            url:  "/"
 
         },
         {
@@ -102,8 +102,7 @@ const Header = () => {
                 <nav className="bg-[#f1f3ff]  dark:bg-gray-700 shadow-xl w-full flex border-t-[1px] border-t-[#a8acd5] border-b-[1px] border-b-[#a8acd5] mt-[5px] items-center justify-center text-center">
                     <div className="flex flex-wrap justify-between items-center mx-auto w-full max-w-[1200px] px-4 ">                        
 
-                        <div onClick={handleButtonToggle} className="justify-end px-2 py-2 ml-auto bg-gray-700 rounded-md mobileToggle
-                             dark:bg-slate-50 hover:bg-gray-300 cursor-pointer mobileToggleBtn">
+                        <div onClick={handleButtonToggle} className="justify-end px-2 py-2 ml-auto bg-gray-700 rounded-md cursor-pointer mobileToggle dark:bg-slate-50 hover:bg-gray-300 mobileToggleBtn">
                             <button  className="items-center justify-center text-center cursor-pointer">
                                 <FiMenu size={25} className="items-center justify-center text-center dark:text-gray-900 text-[#fff] hover:text-gray-800" />
                             </button>

@@ -1,7 +1,7 @@
 import MyCarouselOwlLoan from "./MyCarouselOwlLoan";
 
 
-export const LoanSerCarousel = () => {
+export const LoanSerCarousel = () => {    
     return (
         <>
         <section>

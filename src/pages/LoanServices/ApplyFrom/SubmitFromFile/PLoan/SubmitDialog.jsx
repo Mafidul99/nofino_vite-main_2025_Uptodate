@@ -1,13 +1,15 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Modal, ModalBody, Button } from "react-bootstrap";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
+import Loader from "../../../../../components/Layouts/Loader";
 
 
 // import { IoWarningOutline } from "react-icons/io5";
 
 const SubmitDialog = () => {
+  const [isPending, setIsPending] = useState(true);
   const [openModal, setOpenModal] = useState(false); 
   const [isPanding, setIsPanding] = useState(false);
 
@@ -33,8 +35,7 @@ const SubmitDialog = () => {
   const handleFormSubmit = async (e) => {
       e.preventDefault();
       setIsPanding(true)
-      await new Promise((res) => setTimeout
-      (res, 5000));
+      await new Promise((res) => setTimeout(res, 5000));
       setIsPanding(false);
   
       try {
@@ -92,10 +93,10 @@ const SubmitDialog = () => {
         };
   
         const result = await emailjs.send(
-          process.env.REACT_APP_MY_SERVICE_ID,
-          process.env.REACT_APP_MY_TEMPLATE_ID,
+          import.meta.env.VITE_APP_MY_SERVICE_ID,
+          import.meta.env.VITE_APP_MY_TEMPLATE_ID,
           templateParams,
-          process.env.REACT_APP_MY_PUBLIC_KEY
+          import.meta.env.VITE_APP_MY_PUBLIC_KEY
         );
   
         console.log('Email successfully sent:', result.text);
@@ -125,6 +126,18 @@ const SubmitDialog = () => {
   //     });    
      
   // }
+
+  useEffect(() => {
+        const loadApp = async () => {
+          await new Promise(resolve => setTimeout(resolve, 2000));
+          setIsPending(false);
+        };
+    
+        loadApp();
+      }, []);
+      if (isPending) {
+            return <Loader />;
+          }
 
   return (
     <>
@@ -182,7 +195,7 @@ const SubmitDialog = () => {
           </div>
         </div>
         <h2 className='text-[20px] font-[700] dark:text-[#D6D6D6] py-3 underline mt-3'>Personal Details</h2>
-        <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col">
             <label htmlFor="user_name" className="mb-2">
               <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Your Name</span>
@@ -208,7 +221,7 @@ const SubmitDialog = () => {
               placeholder='Enter Mother Name' required />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+        <div className="grid grid-cols-4 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col">
             <label htmlFor="email" className="mb-2">
               <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Email Address</span>
@@ -325,7 +338,7 @@ const SubmitDialog = () => {
           </div>
         </div>
         <h2 className='text-[20px] font-[700] dark:text-[#D6D6D6] py-3 underline mt-3'>Account Details</h2>
-        <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col">
             <label htmlFor="account_number" className="mb-2">
               <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Account Number</span>
@@ -352,7 +365,7 @@ const SubmitDialog = () => {
           </div>
         </div>
         <h2 className='text-[20px] font-[700] dark:text-[#D6D6D6] py-3 underline mt-3'>Address Details</h2>
-        <div className="grid grid-cols-4 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+        <div className="grid grid-cols-4 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col col-span-2 md:col-span-1">
             <label htmlFor="address" className="mb-2">
               <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>House No/Name</span>
@@ -409,7 +422,7 @@ const SubmitDialog = () => {
           </div>
         </div>
         <h2 className='text-[20px] font-[700] dark:text-[#D6D6D6] py-3 underline mt-3'>Documents Upload</h2>
-        <div className="grid grid-cols-3 gap-4 lg:grid-cols-2 md:grid-cols-1 mt-2">
+        <div className="grid grid-cols-3 gap-4 mt-2 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col">
             <label htmlFor="attachmentsPan" className="mb-2">
               <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Pan Card</span>
