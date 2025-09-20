@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SIPInvesmentCalc from '../../utils/SIPInvesmentCalc';
+import Loader from '../../components/Layouts/Loader';
 
 const SipInvesment = () => {
+  const [isPending, setIsPending] = useState(true);
+    
+    useEffect(() => {
+      const loadApp = async () => {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsPending(false);
+      };
+  
+      loadApp();
+    }, []);
+  
+    if (isPending) {
+      return <Loader />;
+    }
   return (
     <>
       <section>

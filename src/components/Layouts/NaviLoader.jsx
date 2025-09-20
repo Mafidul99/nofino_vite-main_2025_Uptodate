@@ -3,7 +3,7 @@ import "../../App.css";
 
 export function NaviLoader(){
     return(
-        <div className="container loader-section">
+        <div className="w-full h-full ">
             <div className="small_loader"></div>;
         </div>
         

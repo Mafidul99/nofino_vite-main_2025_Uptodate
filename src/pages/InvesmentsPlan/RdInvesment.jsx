@@ -1,7 +1,22 @@
-import React from 'react'
 import RdInvesmentCalc from '../../utils/RdInvesmentCalc';
+import React, { useEffect, useState } from 'react'
+import Loader from '../../components/Layouts/Loader';
 
 const RdInvesment = () => {
+  const [isPending, setIsPending] = useState(true);
+    
+    useEffect(() => {
+      const loadApp = async () => {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsPending(false);
+      };
+  
+      loadApp();
+    }, []);
+  
+    if (isPending) {
+      return <Loader />;
+    }
   return (
     <>
       <section>
@@ -18,7 +33,7 @@ const RdInvesment = () => {
             </div>
           </div>
         </div>
-        <div className="items-center w-full my-4">
+        <div className="items-center w-full">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full">
             <div className="w-[100%] grid gap-2 grid-cols-1">
               <RdInvesmentCalc />

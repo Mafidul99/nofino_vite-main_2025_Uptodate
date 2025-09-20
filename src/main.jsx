@@ -5,9 +5,8 @@ import App from './App.jsx'
 import '@fontsource/roboto';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Provider } from "react-redux";   // ✅ import Provider
-import { store } from "./redux/store";    // ✅ import our store 
-// import '../node_modules/react-linechart/dist/styles.css';
+import { Provider } from "react-redux";   
+import { store } from "./redux/store";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

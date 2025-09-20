@@ -45,6 +45,9 @@ import FdCalculator from './pages/Calculators/FdCalculator'
 import RdCalculator from './pages/Calculators/RdCalculator'
 import LoanEMICalculator from './pages/Calculators/LoanEMICalculator'
 
+
+
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -54,6 +57,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+        
       },
       {
         path: "/about",
@@ -162,7 +166,6 @@ const router = createBrowserRouter([
       {
         path: "/rd-invesment",
         element: <RdInvesment/>,
-
       },
       {
         path: "/sip-invesment",

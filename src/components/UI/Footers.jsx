@@ -160,9 +160,9 @@ const Footers = () => {
                 <ul className="mt-3 space-y-4 text-sm ">
                   {mainMenu.map((mainMenus, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link className="text-gray-700 font-roboto capitalize text-[17px] 
-                                          transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={mainMenus.url} key={index}>
+                              transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={mainMenus.url}>
                           {mainMenus.name}
                         </Link>
                       </li>
@@ -175,9 +175,9 @@ const Footers = () => {
                 <ul className="mt-3 space-y-4 text-sm">
                   {ourServices.map((ourServ, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link className="text-gray-700 font-roboto capitalize text-[17px] 
-                                          transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={ourServ.url} key={index}>
+                                          transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={ourServ.url}>
                           {ourServ.name}
                         </Link>
                       </li>
@@ -190,9 +190,9 @@ const Footers = () => {
                 <ul className="mt-3 space-y-4 text-sm">
                   {helpLink.map((helpLinks, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link className="text-gray-700 font-roboto capitalize text-[17px] 
-                                            transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={helpLinks.url} key={index}>
+                                            transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={helpLinks.url}>
                           {helpLinks.name}
                         </Link>
                       </li>
@@ -261,9 +261,11 @@ const Footers = () => {
                             md:justify-center sm:text-center xs:text-center xs:text-[10px]">
                   {footerLink.map((footerLinks, index) => {
                     return (
-                      <Link className="inline-block px-2 sm:px-[5px] transition hover:text-white xs:text-[10px] sm:text-[11px]" to={footerLinks.url} key={index} >
-                        {footerLinks.name}
-                      </Link>
+                      <li key={index} className='list-none text-decoration-line'>
+                        <Link className="inline-block px-2 sm:px-[5px] transition hover:text-white xs:text-[10px] sm:text-[11px]" to={footerLinks.url}>
+                          {footerLinks.name}
+                        </Link>
+                      </li>
                     );
                   })}
                 </div>

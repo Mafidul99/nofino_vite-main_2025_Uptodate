@@ -48,16 +48,16 @@ function RdInvesmentCalc() {
  
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-6">
+    <div className="flex flex-col items-center p-6">
       <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
         <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
           RD Investment Plan</h1>
         <div className="grid grid-cols-1 gap-4 px-3 py-3">
           <div className="w-full font-roboto">
             {/* Input Form */}
-            <div className="w-full px-4 items-center mx-auto my-auto ">
+            <div className="items-center w-full px-4">
               <form onSubmit={handleSubmit} >
-                <div className="grid grid-cols-4 gap-4 md:grid-cols-3 sm:grid-cols-2 items-end py-3 justify-end ">
+                <div className="grid items-end justify-end grid-cols-4 gap-4 py-3 md:grid-cols-3 sm:grid-cols-2 ">
                   <div className="flex flex-col p-2">
                     <label className="block py-1.5 font-semibold dark:text-white">Monthly Deposit (₹)</label>
                     <input
@@ -113,8 +113,8 @@ function RdInvesmentCalc() {
                 <table className="w-full border border-gray-200 text-[16px]  font-roboto dark:text-white">
                   <thead className="bg-blue-100 dark:bg-green-600">
                     <tr>
-                      <th className="px-4 py-3 border text-center">Description</th>
-                      <th className="px-4 py-3 border text-center">Amount</th>
+                      <th className="px-4 py-3 text-center border">Description</th>
+                      <th className="px-4 py-3 text-center border">Amount</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -132,17 +132,17 @@ function RdInvesmentCalc() {
                         {result.tenureYears} year(s) ({result.months} months)
                       </td>
                     </tr>
-                    <tr className="hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto font-bold">
+                    <tr className="font-bold hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto">
                       <td className="px-4 py-2 border">Deposited Amount</td>
-                      <td className="px-4 py-2 border text-blue-600">₹{Number(result.depositedAmount).toLocaleString()}</td>
+                      <td className="px-4 py-2 text-blue-600 border">₹{Number(result.depositedAmount).toLocaleString()}</td>
                     </tr>
-                    <tr className="hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto font-bold">
+                    <tr className="font-bold hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto">
                       <td className="px-4 py-2 border">Interest Earned</td>
-                      <td className="px-4 py-2 border text-red-600">₹{Number(result.interestEarned).toLocaleString()}</td>
+                      <td className="px-4 py-2 text-red-600 border">₹{Number(result.interestEarned).toLocaleString()}</td>
                     </tr>
-                    <tr className="hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto font-bold">
+                    <tr className="font-bold hover:bg-gray-100 dark:hover:bg-gray-500 font-roboto">
                       <td className="px-4 py-2 border">Maturity Amount</td>
-                      <td className="px-4 py-2 border text-green-600">₹{Number(result.maturityAmount).toLocaleString()}</td>
+                      <td className="px-4 py-2 text-green-600 border">₹{Number(result.maturityAmount).toLocaleString()}</td>
                     </tr>
                   </tbody>
                 </table>

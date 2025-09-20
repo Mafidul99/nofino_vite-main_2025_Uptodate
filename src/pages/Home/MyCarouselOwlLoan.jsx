@@ -5,7 +5,6 @@ import BusinessLoanData from "../../api/businessLoanData.json";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const MyCarouselOwlLoan = () => {
-
     return (
         <>
 
@@ -43,7 +42,7 @@ const MyCarouselOwlLoan = () => {
                                                     <div className="pt-0 tracking-[.9px] w-[100%]">
                                                         <div className="cardTitle">
                                                             <h2 className="font-roboto text-red-600 font-[600] dark:text-white text-[20px] uppercase ">
-                                                                {loanType} </h2> <hr className="dark:text-[#D6D6D6]"/>
+                                                                {loanType} </h2> <hr className="dark:text-[#D6D6D6]" />
                                                         </div>
                                                         <div className="pt-1 pr-4 font-roboto pl-7">
                                                             <span className="font-[600] text-[15px] dark:text-white text-gray-500">Interest Rate : </span>
@@ -80,12 +79,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -149,12 +148,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -218,12 +217,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -287,12 +286,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -356,12 +355,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -425,12 +424,12 @@ const MyCarouselOwlLoan = () => {
                                                     </div>
                                                     <div className="flex items-center w-full py-4 ml-9">
                                                         <div className="flex w-[33%] items-center  rounded-md bg-gradient-to-r from-green-600 from-10%  to-green-900 to-90%">
-                                                                <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
-                                                                    <NavLink to="" className="flex items-center w-full text-white ">
-                                                                        Read More
-                                                                        <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
-                                                                    </NavLink>
-                                                                </div>
+                                                            <div className="flex w-[130px] hover:bg-gradient-to-l from-green-600 from-10%  to-green-900 to-90% text-white font-roboto pt-2 pb-2 pl-3 pr-3 items-center rounded-md">
+                                                                <NavLink to="" className="flex items-center w-full text-white ">
+                                                                    Read More
+                                                                    <span className="inline items-center pl-[5px]"><HiArrowLongRight /></span>
+                                                                </NavLink>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -449,6 +448,7 @@ const MyCarouselOwlLoan = () => {
 
     );
 }
+
 export default MyCarouselOwlLoan;
 
 

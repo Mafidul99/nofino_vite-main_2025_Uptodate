@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import FdInvesmentCalc from '../../utils/FdInvesmentCalc';
+import Loader from '../../components/Layouts/Loader';
 
 const FdInvesment = () => {
+  const [isPending, setIsPending] = useState(true);
+  
+  useEffect(() => {
+    const loadApp = async () => {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      setIsPending(false);
+    };
+
+    loadApp();
+  }, []);
+
+  if (isPending) {
+    return <Loader />;
+  }
+  
   return (
     <>
       <section>
@@ -27,7 +43,8 @@ const FdInvesment = () => {
         </div>
       </section>
     </>
-  )
+  );
 }
+
 
 export default FdInvesment;
