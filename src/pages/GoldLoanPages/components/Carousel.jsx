@@ -14,7 +14,7 @@ const Carousel = ({ items }) => {
                                     alt={item.title}
                                     className="object-cover w-full h-48 rounded-lg"
                                 />
-                                <h3 className="mt-2 text-lg font-semibold text-center">
+                                <h3 className="mt-2 text-lg font-semibold text-center dark:text-white">
                                     {item.title}
                                 </h3>
                             </div>
