@@ -8,6 +8,13 @@ import BannerImg from './common/BannerImg';
 
 
 const AnkletsToeRings = () => {
+  const carouselItems = [
+  { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', icon: "🚀 ", title: 'Bracelets Bangles', bgcolor: "#BFDBFE" },
+  { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048',  icon: "🔥 ", title: 'Featured Product 2', bgcolor: "#c6f6d5" },
+  { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', icon: "⭐ ", title: 'Featured Product 3', bgcolor: "#FED7D7" },
+  { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', icon: "⭐ ", title: 'Featured Product 3', bgcolor: "#c6f6d5" },
+  { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', icon: "⭐ ", title: 'Featured Product 3', bgcolor: "#ce93d8" },
+];
   return (
     <>
     <div className='flex items-center justify-center mt-[40px] w-full'>
@@ -23,7 +30,7 @@ const AnkletsToeRings = () => {
           </div>
         </div>
       </div>
-    <div className="w-full items-center justify-center mt-4 h-full">
+    <div className="items-center justify-center w-full h-full mt-4">
       <Banner />      
       <div className="flex-wrap justify-between max-w-[1200px] w-full items-center px-4 mx-auto py-6">
         <div className="grid grid-cols-4 gap-3">             
@@ -37,7 +44,7 @@ const AnkletsToeRings = () => {
         </div>
         </div>
         <div className='grid grid-cols-1 gap-6 mt-6'>
-          <OwlCarouselBanner />
+          <OwlCarouselBanner items={carouselItems}/>
         </div>
       </div>
     </div>

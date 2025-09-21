@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/virtual';
 
-const Carousel = ({ items }) => {  
+const BannerSwiper = ({ items }) => {  
 
 
     return (
@@ -44,4 +44,4 @@ const Carousel = ({ items }) => {
     );
 };
 
-export default Carousel;
+export default BannerSwiper;

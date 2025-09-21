@@ -5,9 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/virtual';
 
-const Carousel = ({ items }) => {  
-
-
+const Carousel = ({ items }) => {
     return (
         <>
             <div className="flex items-center justify-center w-full py-4 my-4">

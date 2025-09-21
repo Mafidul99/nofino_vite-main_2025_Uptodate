@@ -63,12 +63,12 @@ const LoanSerDropDown = () => {
 
     return (
         <>
-            <div className="group relative inline-block text-left">
+            <div className="relative inline-block text-left group">
                 <div>
                     
                     <button onClick={toggleDropdown} 
                         onMouseEnter={() => setIsOpen(true)}
-                        className="inline-flex justify-center menu-hover font-roboto w-full hover:text-gray-800" >
+                        className="inline-flex justify-center w-full menu-hover font-roboto hover:text-gray-800" >
                              Loan Services
                         <RxCaretDown fontSize={16} className='inline hover:text-gray-800' />
                     </button>
@@ -80,8 +80,8 @@ const LoanSerDropDown = () => {
                         <div className="py-1 " role="none">                            
                             {calLinks.map((calLink, index) => {
                                 return (
-                                    <Link to={calLink.url}
-                                        className="flex px-4 py-[15px] font-roboto text-[15px] text-gray-700 dark:text-white dark:hover:text-green-500
+                                    <Link to={calLink.url} key={index}
+                                        className="flex px-4 py-[10px] font-roboto text-[15px] text-gray-700 dark:text-white dark:hover:text-green-500
                                          hover:text-green-500 items-center" role="menuitem" >
                                             {/* <img src={calLink.images} alt={calLink.alt} className="flex w-[22px] mr-2 items-center justify-center" /> */}
                                             <span className="flex text-[23px] mr-2 items-center justify-center">{calLink.icons}</span>

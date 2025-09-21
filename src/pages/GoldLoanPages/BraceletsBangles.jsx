@@ -13,6 +13,8 @@ const BraceletsBangles = () => {
     { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', title: 'Bracelets Bangles' },
     { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', title: 'Featured Product 2' },
     { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', title: 'Featured Product 3' },
+    { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', title: 'Featured Product 3' },
+    { image: 'https://imageskincare.com/cdn/shop/files/OILY-SKIN-SET-PDP-R01A.jpg?v=1712756753&width=2048', title: 'Featured Product 3' },
   ];
 
   const allProducts = [
@@ -59,7 +61,9 @@ const BraceletsBangles = () => {
               <ProductGrid products={filteredProducts} />
             </div>
           </div>
-          <Carousel items={carouselItems} />
+          <div className='flex-col w-full'>
+            <Carousel items={carouselItems} />
+          </div>
           <OtherContent />
         </div>
       </div>
