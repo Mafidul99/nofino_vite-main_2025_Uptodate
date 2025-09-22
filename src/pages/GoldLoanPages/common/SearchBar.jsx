@@ -2,8 +2,8 @@
 import { FiSearch } from "react-icons/fi";
 export default function SearchBar() {
   return (
-    <div className="flex mb-4 items-center bg-gray-700 rounded-md pl-2 ">
-        <FiSearch size={25} className="justify-center items-center text-white font-roboto font-bold"/>        
+    <div className="flex items-center pl-2 mb-4 bg-gray-700 rounded-md ">
+        <FiSearch size={25} className="items-center justify-center font-bold text-white font-roboto"/>        
       <input      
         type="text"
         placeholder="Search products..."

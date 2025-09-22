@@ -22,7 +22,6 @@ const OwlCarouselBanner = ({items}) => {
           >
             {items.map((item, idx) => (
               <SwiperSlide key={idx}>
-                {/* <img src={src.img} alt={src.alt} className="object-cover w-full h-60" /> */}
                 <div className="overflow-hidden rounded shadow-md"  style={{ backgroundColor: item.bgcolor }}>
                   <img src={item.image} alt={item.title} className="object-cover w-full h-36" />
                   <div className="p-4">
