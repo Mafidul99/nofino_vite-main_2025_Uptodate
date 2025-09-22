@@ -2,11 +2,8 @@ import { useState } from "react";
 import { RxCaretDown } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
-import { IoCloseCircleOutline } from "react-icons/io5";
 
 export const MobileHeader = () => {
-    // const [closeMenu, setCloseMenu] = useState(false);
-
     const [isOpenLoan, setIsOpenLoan] = useState(false);
     const [isOpenGold, setIsOpenGold] = useState(false);
     const [isOpenInves, setIsOpenInves] = useState(false);
@@ -20,9 +17,6 @@ export const MobileHeader = () => {
     const toggleDropdownInves = () => {
         setIsOpenInves(!isOpenInves);
     };
-    // const closeMenuBtn = () => {
-    //     setCloseMenu(!closeMenu);
-    // }
 
     const LoanSerLink = [
         {
@@ -103,18 +97,7 @@ export const MobileHeader = () => {
     return (
         <>
 
-            <div className="w-[40%] overflow-y-auto bg-[#f4f4f4] lg:bg-white shadow-md dark:bg-gray-600 md:dark:bg-gray-600
-                    dark:border-gray-700 dark:border-0 border-gray-100 transition-transform duration-400                                       
-                        [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#fff]
-                        [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300
-                        dark:[&::-webkit-scrollbar-track]:bg-gray-600 dark:[&::-webkit-scrollbar-thumb]:bg-gray-700">
-
-                <div className="flex px-4 py-2 w-[100%] border-b-[1px] border-b-slate-500 dark:border-b-[#a8acd5] justify-end">
-                    <button className="items-center ">
-                        <IoCloseCircleOutline size={33} className="items-center dark:text-[#ccced2] hover:text-purple-600 dark:hover:text-[#fff] text-gray-800 " />
-                    </button>
-                </div>
-
+            <div className="h-[100vh] flex flex-col w-full px-5 py-4 space-y-7">
                 <ul className="font-[700] text-[16px] font-roboto items-start flex flex-col p-4 capitalize">
                     <li>
                         <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-green-700 md:p-0 dark:text-white dark:hover:text-green-400">
@@ -130,7 +113,7 @@ export const MobileHeader = () => {
                         <button onClick={toggleDropdownLoan} className="flex relative items-center justify-between w-full py-2 px-3 text-gray-700 rounded-sm
                             dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent  dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-transparent
                              md:dark:hover:bg-transparent font-[700] text-[16px]">
-                            Loan Services <RxCaretDown fontSize={20} className='inline-block justify-self-end ml-auto ' />
+                            Loan Services <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end ' />
                         </button>
                         {isOpenLoan && (
                             <div className="bg-transparent  font-[12px] w-[300px] text-start pl-2 font-roboto">
@@ -163,7 +146,7 @@ export const MobileHeader = () => {
                             dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent 
                             md:border-0 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 
                             md:dark:hover:bg-transparent font-[700] text-[16px]">
-                            Gold Loan Services <RxCaretDown fontSize={20} className='inline-block justify-self-end ml-auto' />
+                            Gold Loan Services <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end' />
                         </button>
                         {isOpenGold && (
                             <div className="bg-transparent  font-[12px] w-[300px] text-start pl-2 font-roboto">
@@ -186,7 +169,7 @@ export const MobileHeader = () => {
                             dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent md:border-0 md:p-0 
                             md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 
                             md:dark:hover:bg-transparent font-[700] text-[16px]">
-                            Invesments Plan <RxCaretDown fontSize={20} className='inline-block justify-self-end ml-auto' />
+                            Invesments Plan <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end' />
                         </button>
                         {isOpenInves && (
                             <div className="bg-transparent  font-[12px] w-[300px] text-start pl-2 font-roboto">
