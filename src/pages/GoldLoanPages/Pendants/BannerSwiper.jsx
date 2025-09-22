@@ -14,6 +14,7 @@ const BannerSwiper = ({ items }) => {
                 <div className="flex-wrap justify-between max-w-[1200px] w-full items-center px-4">
                     <div class="w-full font-roboto">
                         <div class="gird grid-rows-1 gap-2" >
+                            <div className="swiper-container-wrapper">
                             <Swiper
                                 modules={[Navigation, Autoplay]}
                                 navigation
@@ -21,7 +22,7 @@ const BannerSwiper = ({ items }) => {
                                 loop
                                 spaceBetween={20}
                                 slidesPerView={3}
-                                className="overflow-hidden rounded-lg"
+                                className="overflow-hidden rounded-lg mySwiper"
                             >
                                 {items.map((item, idx) => (
                                     <SwiperSlide key={idx}>
@@ -35,6 +36,7 @@ const BannerSwiper = ({ items }) => {
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
+                            </div>
                         </div>
                     </div>
                 </div>

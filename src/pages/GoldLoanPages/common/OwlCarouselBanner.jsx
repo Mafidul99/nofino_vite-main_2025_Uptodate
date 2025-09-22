@@ -10,6 +10,7 @@ const OwlCarouselBanner = ({items}) => {
     <>
       <div className="my-6">
         <div className="dark:text-gray-800">
+          <div className="swiper-container-wrapper">
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
@@ -17,7 +18,7 @@ const OwlCarouselBanner = ({items}) => {
             loop
             spaceBetween={20}
             slidesPerView={3}
-            className="overflow-hidden rounded-lg"
+            className="overflow-hidden rounded-lg mySwiper"
           >
             {items.map((item, idx) => (
               <SwiperSlide key={idx}>
@@ -31,6 +32,7 @@ const OwlCarouselBanner = ({items}) => {
               </SwiperSlide>
             ))}
           </Swiper>
+          </div>
         </div>
       </div >
 

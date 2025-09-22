@@ -649,6 +649,50 @@ body{
 }
 
 
+.swiper-container-wrapper {
+  position: relative;
+  margin: auto;  
+}
+
+.mySwiper{
+  position: static !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  position: absolute !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: #06af00 !important;
+  background-color: #f6f6f6 !important;
+  padding: 6px !important;
+  border-radius: 50% ;
+  z-index: 1 !important;
+}
+
+.swiper-button-next{
+  right: -45px !important;
+}
+.swiper-button-prev{
+  left: -45px !important;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  background-color: #06af00 !important;
+  color: #fff !important;
+}
+
+.swiper-navigation-icon{
+  width: 10px !important;
+}
+
+
+
+
+
 
 
 

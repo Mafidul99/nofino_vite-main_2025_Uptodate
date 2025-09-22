@@ -1,4 +1,5 @@
-import MyCarouselOwlLoan from "./MyCarouselOwlLoan";
+
+import NavTabs from "./ProductsCarousel/NavTabs";
 
 
 export const LoanSerCarousel = () => {    
@@ -19,7 +20,7 @@ export const LoanSerCarousel = () => {
                 </div>
             </div>
             <div className="oveoverflow-hidden">
-            <MyCarouselOwlLoan/>  
+            <NavTabs/>
             </div>
         </section>
                        

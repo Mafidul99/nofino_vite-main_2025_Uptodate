@@ -34,7 +34,7 @@ export const DigitalServices = () => {
     return (
         <>
             <section>
-                <div className='flex items-center justify-center mt-[40px]  w-ful '>
+                <div className='flex items-center justify-center w-full'>
                     <div className='flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full px-4'>
                         <div className='flex w-[100%] font-roboto text-[30px] tracking-[.9px] font-[200] dark:text-[#D6D6D6]'>
                             <span>Trusted Company</span>
@@ -52,7 +52,7 @@ export const DigitalServices = () => {
                     <div className="flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full px-4">
                         <div className="w-[100%] grid gap-4 grid-cols-4 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
                             {cardLinks.map((cardlink, index) => {
-                                return <div className="items-center w-full">
+                                return <div className="items-center w-full" key={index}>
                                 <div className="choose-us-single-feature ">
                                     <div className="choose-us-feature-wrapper white dark:bg-gray-700">                                        
                                          <div className="choose-us-content">

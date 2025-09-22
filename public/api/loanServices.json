@@ -1,0 +1,57 @@
+[
+    {
+
+    "id": 1,
+    "slno": "01",
+    "servicename": "Personal Loan",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Our vision is to provide accessible, flexible, and reliable personal loans, empowering individuals to achieve their financial goals with transparency and exceptional customer service."
+},
+{
+
+    "id": 2,
+    "slno": "02",
+    "servicename": "Product Loan",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Empowering dreams with accessible loans for mobile phones, fridges, and more, our company supports your essential purchases, enhancing everyday life with ease and affordability."
+},
+{
+
+    "id": 3,
+    "slno": "03",
+    "servicename": "Gold Loan",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Empower financial growth with accessible gold loans, offering flexible terms,competitive rates, and personalized service, ensuring prosperity for our clients and communities."
+},
+{
+
+    "id": 4,
+    "slno": "04",
+    "servicename": "Loan against Vehicle",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Loan Against Vehicle service allows you to unlock the value of your vehicle to secure a low-interest loan. This flexible financing option provides quick access to you continue using your vehicle."
+},
+{
+
+    "id": 5,
+    "slno": "05",
+    "servicename": "Business Loan",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Secure your business's growth with Nofino Rural Finance Private Limited's flexible and competitive business loans. From startups to established enterprises, we offer tailored financing solutions to fuel your success."
+},
+{
+
+    "id": 6,
+    "slno": "06",
+    "servicename": "Group Loan",
+    "loanAmount": "Up to ₹25 Lakhs",
+    "tenure": "6 Months to 12 Months",
+    "discraption": "Nofino Rural Finance Private Limited enables members of a community to access low-interest financing collectively, fostering mutual support and shared responsibility. and promotes sustainable economic growth in North East India."
+}
+
+]

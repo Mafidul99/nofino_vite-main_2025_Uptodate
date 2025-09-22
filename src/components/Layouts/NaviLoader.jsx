@@ -3,9 +3,7 @@ import "../../App.css";
 
 export function NaviLoader(){
     return(
-        <div className="w-full h-full ">
-            <div className="small_loader"></div>;
-        </div>
+        <div className="items-center justify-center text-center loader justify-items-center"></div>
         
     )
 }
