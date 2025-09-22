@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { products as allProducts } from './BraceletsBangles/products';
 import Banner from './BraceletsBangles/Banner';
 import BannerImg from './BraceletsBangles/BannerImg';
@@ -6,6 +6,7 @@ import OwlCarouselBanner from './common/OwlCarouselBanner';
 import ProductFilter from './common/ProductFilter';
 import ProductList from './common/ProductList';
 import SearchBar from './common/SearchBar';
+import Loader from '../../components/Layouts/Loader';
 
  const carouselItems = [
   { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHOCzaEM17rj4LhXRx3nOezr76b-3BZ_WN_A&s', icon: "🚀 ", title: 'Bracelets Bangles', bgcolor: "#BFDBFE" },
@@ -16,6 +17,8 @@ import SearchBar from './common/SearchBar';
 ];
 
 function BraceletsBangles() {
+  const [isPending, setIsPending] = useState(true);
+  
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [maxPrice, setMaxPrice] = useState(2000);
 
@@ -25,6 +28,20 @@ function BraceletsBangles() {
     const priceMatch = product.price <= maxPrice;
     return categoryMatch && priceMatch;
   });
+
+  useEffect(() => {
+            const loadApp = async () => {
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              setIsPending(false);
+            };
+        
+            loadApp();
+          }, []);
+        
+          if (isPending) {
+            return <Loader />;
+            
+          }
 
   return (
     <div className="items-center justify-center w-full h-full ">
