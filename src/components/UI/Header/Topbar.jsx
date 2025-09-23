@@ -39,17 +39,17 @@ const Topbar = () => {
                             </div>
                         </div>
                         <div className='flex ml-auto text-[#ccced2] font-roboto items-center text-[12px] h-[24px] sm:ml-0 sm:text-center sm:items-center sm:justify-center'>
-                            <span className='inline-flex items-center justify-center mr-2 hover:text-white'>
+                            <Link to="/support" className='inline-flex items-center justify-center mr-2 hover:text-white'>
                                 <BiSupport fontSize={12} className='mr-1 hover:text-white' /> Support
-                            </span>
+                            </Link>
                             <div className='flex text-[15px] items-center hover:text-white xs:text-[10px] 
                                 border-dashed border-r-[#ccced2] border-l-[1px] border-r-[1px]'>
                                 <TopbarDropdown />
                             </div>
                             <div className='flex text-[12px] items-center pl-2 font-roboto xs:text-[10px]'>
-                                <span className='text-[12px] hover:text-white mr-2'> Personal Banking
+                                <Link to="/" className='text-[12px] hover:text-white mr-2'> Personal Banking
                                     <LuSquareArrowOutUpRight fontSize={16} className='inline-block ml-1 hover:text-white' />
-                                </span>
+                                </Link>
                             </div>
                         </div>
                     </div>
