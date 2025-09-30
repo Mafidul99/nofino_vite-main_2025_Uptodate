@@ -4,8 +4,8 @@ const categories = ['All', 'Phones', 'Laptops', 'Tablets'];
 
 const ProductFilter = ({ selectedCategory, setSelectedCategory, maxPrice, setMaxPrice }) => {
   return (
-    <div className='items-center px-3 py-3 bg-[#fff] rounded-md dark:bg-gray-700'>
-    <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+    <div className='items-center px-3 py-3 bg-[#fff] rounded-md dark:bg-gray-700 w-full'>
+    <div className="flex flex-col gap-3 sm:grid-cols-1 w-full">
       <h2 className="text-lg font-semibold ">Filters</h2>
       <div>
         <label className="block mb-1 text-sm font-medium text-gray-700 dark:text-white">Category</label>

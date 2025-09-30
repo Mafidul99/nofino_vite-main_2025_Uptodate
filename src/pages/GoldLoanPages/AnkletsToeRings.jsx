@@ -47,8 +47,8 @@ function AnkletsToeRings() {
     <div className="items-center justify-center w-full h-full ">
       <Banner />
       <div className="flex-wrap justify-between max-w-[1200px] w-full items-center px-4 mx-auto py-6">
-        <div className="grid grid-cols-4 gap-3">
-          <div className="col-span-1 gap-2">
+        <div className="grid grid-cols-4 gap-3 md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 w-full">
+          <div className="col-span-1 gap-3 md:col-span-2">
             <SearchBar/>
             <ProductFilter
               selectedCategory={selectedCategory}

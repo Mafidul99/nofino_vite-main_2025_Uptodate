@@ -5,32 +5,54 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/virtual';
 
-const OwlCarouselBanner = ({items}) => {
+const OwlCarouselBanner = ({ items }) => {
   return (
     <>
       <div className="my-6">
         <div className="dark:text-gray-800">
           <div className="swiper-container-wrapper">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            navigation
-            autoplay={{ delay: 3000 }}
-            loop
-            spaceBetween={20}
-            slidesPerView={3}
-            className="overflow-hidden rounded-lg mySwiper"
-          >
-            {items.map((item, idx) => (
-              <SwiperSlide key={idx}>
-                <div className="overflow-hidden rounded shadow-md"  style={{ backgroundColor: item.bgcolor }}>
-                  <img src={item.image} alt={item.title} className="object-cover w-full h-36" />
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold">{item.icon} {item.title}</h3>
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              navigation
+              autoplay={{ delay: 3000 }}
+              loop
+              spaceBetween={20}
+              slidesPerView={3}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  navigation: false,
+                },
+                378: {
+                  slidesPerView: 1,
+                  navigation: false,
+                },
+                639: {
+                  slidesPerView: 2,
+                  navigation: false,
+                },
+                767: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+              className="overflow-hidden rounded-lg mySwiper"
+            >
+              {items.map((item, idx) => (
+                <SwiperSlide key={idx}>
+                  <div className="overflow-hidden rounded shadow-md" style={{ backgroundColor: item.bgcolor }}>
+                    <img src={item.image} alt={item.title} className="object-cover w-full h-36" />
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold">{item.icon} {item.title}</h3>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div >
