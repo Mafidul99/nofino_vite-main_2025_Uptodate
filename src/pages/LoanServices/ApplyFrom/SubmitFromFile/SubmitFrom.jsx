@@ -2,8 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import Loader from '../../../../components/Layouts/Loader';
+import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 
 const SubmitFrom = () => {
+    const [formDataRef, setFormData] = useState({      
+          country: '',
+          region: '',
+        });
     const [isPending, setIsPending] = useState(true);
     const [currentStep, setCurrentStep] = useState(1);
 
@@ -16,12 +21,21 @@ const SubmitFrom = () => {
     };
 
 
+    const handleCountryChange = (val) => {
+    setFormData((prev) => ({ ...prev, country: val, region: '' }));
+  };
+
+  const handleRegionChange = (val) => {
+    setFormData((prev) => ({ ...prev, region: val }));
+  };
+
+
     const formData = useRef();
 
     const formSubmit = (e) => {
         e.preventDefault();
 
-   
+
         const templateParams = {
             loanAmount: e.target['loan-amount'].value,
             monthlyIncome: e.target['monthly-income'].value,
@@ -46,9 +60,10 @@ const SubmitFrom = () => {
             branch: e.target['branch'].value,
             address: e.target['address'].value,
             street: e.target['street'].value,
-            district: e.target['district'].value,
+            // district: e.target['district'].value,
             city: e.target['city'].value,
-            state: e.target['state'].value,
+            country: e.target['country'].value,
+            region: e.target['region'].value,
             zip: e.target['zip'].value,
 
             // Image Upload files
@@ -62,10 +77,10 @@ const SubmitFrom = () => {
             fileSignature: e.target['file-signature'].files[0],
 
         };
-        
+
         const myServiceId = (import.meta.env.VITE_APP_MY_SERVICE_ID);
         const myTemplateId = (import.meta.env.VITE_APP_MY_TEMPLATE_ID);
-        const myPublicKey = { publicKey: (import.meta.env.VITE_APP_MY_PUBLIC_KEY)};
+        const myPublicKey = { publicKey: (import.meta.env.VITE_APP_MY_PUBLIC_KEY) };
 
         emailjs.sendForm(myServiceId, myTemplateId, templateParams, formData.current, myPublicKey).then(
             () => {
@@ -79,16 +94,16 @@ const SubmitFrom = () => {
     }
 
     useEffect(() => {
-            const loadApp = async () => {
-              await new Promise(resolve => setTimeout(resolve, 2000));
-              setIsPending(false);
-            };
-        
-            loadApp();
-          }, []);
-          if (isPending) {
-                return <Loader />;
-              }
+        const loadApp = async () => {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            setIsPending(false);
+        };
+
+        loadApp();
+    }, []);
+    if (isPending) {
+        return <Loader />;
+    }
 
     const renderStep = () => {
         switch (currentStep) {
@@ -352,14 +367,14 @@ const SubmitFrom = () => {
                                     <input type="text" id="street" name="street" className="border border-gray-300 p-2 text-[15px] rounded dark:bg-gray-600 dark:text-[#fff]"
                                         placeholder="Enter Street" required autoComplete="off" />
                                 </div>
-                                <div className="flex flex-col">
+                                {/* <div className="flex flex-col">
                                     <label htmlFor="district" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>District</span>
                                         <span className='text-red-500 text-[18px]'> * </span>
                                     </label>
                                     <input type="text" id="district" name="district" className="border border-gray-300 p-2 text-[15px] rounded dark:bg-gray-600 dark:text-[#fff]"
                                         placeholder="Enter District" required autoComplete="off" />
-                                </div>
+                                </div> */}
                                 <div className="flex flex-col">
                                     <label htmlFor="city" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>City</span>
@@ -369,18 +384,47 @@ const SubmitFrom = () => {
                                         placeholder="Enter City" required autoComplete="off" />
                                 </div>
                                 <div className="flex flex-col">
+                                    <label htmlFor="country" className="mb-2">
+                                        <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>Country</span>
+                                        <span className='text-red-500 text-[18px]'> * </span>
+                                    </label>
+                                    {/* <select name="state" className="border border-gray-300 p-2 text-[15px] rounded dark:bg-gray-600 dark:text-[#fff]
+                                                         focus:ring-green-500 focus:border-green-500 block w-full  dark:border-gray-600 dark:placeholder-gray-400
+                                                          dark:focus:ring-green-500 dark:focus:border-green-500" required >
+                                              <option value="">Select State</option>
+                                              <option value="CA">California</option>
+                                              <option value="TX">Texas</option>
+                                              <option value="NY">New York</option>
+                                            </select> */}
+                                    <CountryDropdown
+                                        value={formDataRef.country}
+                                        name="country"
+                                        onChange={handleCountryChange}
+                                        className="w-full px-3 py-2 bg-[#fff] border rounded dark:bg-gray-600 dark:text-white"
+                                        required
+                                    />
+                                </div>
+                                <div className="flex flex-col">
                                     <label htmlFor="state" className="mb-2">
                                         <span className='text-[15px] font-[500] dark:text-[#D6D6D6]'>State</span>
                                         <span className='text-red-500 text-[18px]'> * </span>
                                     </label>
-                                    <select name="state" id="state" className="border border-gray-300 p-2 text-[15px] rounded dark:bg-gray-600 dark:text-[#fff]
+                                    {/* <select name="state" id="state" className="border border-gray-300 p-2 text-[15px] rounded dark:bg-gray-600 dark:text-[#fff]
                                                 focus:ring-green-500 focus:border-green-500 block w-full  dark:border-gray-600 dark:placeholder-gray-400
                                                 dark:focus:ring-green-500 dark:focus:border-green-500" required autoComplete="off">
                                         <option value="">Select State</option>
                                         <option value="CA">California</option>
                                         <option value="TX">Texas</option>
                                         <option value="NY">New York</option>
-                                    </select>
+                                    </select> */}
+                                    <RegionDropdown
+                                        country={formDataRef.country}
+                                        name="region"
+                                        value={formDataRef.region}
+                                        onChange={handleRegionChange}
+                                        className="w-full px-3 py-2 bg-[#fff] border rounded dark:bg-gray-600 dark:text-white"
+                                        required
+                                    />
                                 </div>
                                 <div className="flex flex-col">
                                     <label htmlFor="zip" className="mb-2">

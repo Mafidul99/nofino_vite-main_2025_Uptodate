@@ -88,7 +88,7 @@ const MobileMenu = () => {
 
             {/* Mobile Menu Dropdown */}
             {isOpen && (
-                <div className="bg-[#f4f4f4] lg:bg-white shadow-md absolute top-0 left-0 w-[50%] dark:bg-gray-700 transition duration-500">
+                <div className="bg-[#f4f4f4] lg:bg-white shadow-md absolute top-0 left-0 w-[55%]  dark:bg-gray-700 transition duration-500">
                     <div className="w-full border-t border-gray-200 shadow-md lg:inline-block font-roboto ">
                         <nav className="w-full">
                             {/* {menuItems.map((item) => (

@@ -97,8 +97,8 @@ export const MobileHeader = () => {
     return (
         <>
 
-            <div className="h-[100vh] flex flex-col w-full px-5 py-4 space-y-7">
-                <ul className="font-[700] text-[16px] font-roboto items-start flex flex-col p-4 capitalize">
+            <div className="h-[100vh] flex flex-col w-full px-2 py-4 space-y-7">
+                <ul className="font-[700] text-[15px] font-roboto items-start flex flex-col p-4 capitalize">
                     <li>
                         <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-green-700 md:p-0 dark:text-white dark:hover:text-green-400">
                             Home
@@ -142,11 +142,10 @@ export const MobileHeader = () => {
                         </Link>
                     </li>
                     <li className="w-full">
-                        <button onClick={toggleDropdownGold} className="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded-sm
-                            dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent 
-                            md:border-0 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 
-                            md:dark:hover:bg-transparent font-[700] text-[16px]">
-                            Gold Loan Services <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end' />
+                        <button onClick={toggleDropdownGold} className="flex relative items-center w-full py-2 px-3 text-gray-700 rounded-sm
+                            dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent  dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-transparent
+                             md:dark:hover:bg-transparent font-[700] text-[16px]">
+                            Gold Loan Services <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end ' />
                         </button>
                         {isOpenGold && (
                             <div className="bg-transparent  font-[12px] w-[300px] text-start pl-2 font-roboto">
@@ -165,10 +164,9 @@ export const MobileHeader = () => {
                         )}
                     </li>
                     <li className="w-full">
-                        <button onClick={toggleDropdownInves} className="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded-sm
-                            dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent md:border-0 md:p-0 
-                            md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 
-                            md:dark:hover:bg-transparent font-[700] text-[16px]">
+                        <button onClick={toggleDropdownInves} className="flex relative items-center justify-between w-full py-2 px-3 text-gray-700 rounded-sm
+                            dark:hover:text-green-400 hover:text-green-700 md:hover:bg-transparent  dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-transparent
+                             md:dark:hover:bg-transparent font-[700] text-[16px]">
                             Invesments Plan <RxCaretDown fontSize={20} className='inline-block ml-auto justify-self-end' />
                         </button>
                         {isOpenInves && (

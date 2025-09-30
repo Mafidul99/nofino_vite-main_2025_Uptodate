@@ -27,11 +27,11 @@ export const Banner = () => {
                                     <div className="flex flex-wrap justify-between items-center max-w-[1200px] px-2">
                                         <div className="items-center justify-center font-roboto">
                                             <div className="animate-fadeInDown delay-[6000]">
-                                                <p className="text-[35px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px]">
+                                                <p className="text-[35px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px] sm:pt-1 sm:pb-1">
                                                     Simple & Secure Payment Process </p>
                                             </div>
                                             <div className="animate-fadeInDown">
-                                                <h2 className="text-[60px] font-bold capitalize text-gray-950 pb-3 lg:text-[45px] md:text-[40px] sm:text-[25px]">
+                                                <h2 className="text-[60px] font-bold capitalize text-gray-950 pb-3 sm:pb-1 lg:text-[45px] md:text-[40px] sm:text-[25px]">
                                                     Connecting Your Loan Needs </h2>
                                             </div>
                                             <div className="flex font-semibold list-none text-[16px] md:hidden">                                                
