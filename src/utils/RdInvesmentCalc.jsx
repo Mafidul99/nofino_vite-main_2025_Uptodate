@@ -50,7 +50,7 @@ function RdInvesmentCalc() {
   return (
     <div className="flex flex-col items-center p-6">
       <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
-        <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
+        <h1 className="text-[22px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
           RD Investment Plan</h1>
         <div className="grid grid-cols-1 gap-4 px-3 py-3">
           <div className="w-full font-roboto">

@@ -61,15 +61,15 @@ function SIPInvesmentCalc() {
         <>
             <div className="flex flex-col items-center min-h-screen p-6 font-roboto">
                 <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
-                    <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
+                    <h1 className="text-[22px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
                         SIP (Systematic Investment Plan) Investment Plan</h1>
                     <div className="grid grid-cols-3 gap-4 px-3 py-3 md:grid-cols-1 lg:grid-cols-1">
                         <div className="w-full font-roboto">
                             {/* Input Form */}
-                            <div className="w-full px-4 items-center font-roboto">
+                            <div className="items-center w-full px-4 font-roboto">
                                 <form onSubmit={handleSubmit} >
-                                    <div className="flex flex-col p-2 w-full">
-                                        <label className="block mb-1 font-semibold py-2 dark:text-white">Monthly Investment (₹)</label>
+                                    <div className="flex flex-col w-full p-2">
+                                        <label className="block py-2 mb-1 font-semibold dark:text-white">Monthly Investment (₹)</label>
                                         <input
                                             type="number"
                                             value={monthlyInvestment}
@@ -79,7 +79,7 @@ function SIPInvesmentCalc() {
                                         />
                                     </div>
                                     <div className="flex flex-col p-2">
-                                        <label className="block mb-1 font-semibold py-2 dark:text-white">Interest Rate (% per year)</label>
+                                        <label className="block py-2 mb-1 font-semibold dark:text-white">Interest Rate (% per year)</label>
                                         <input
                                             type="number"
                                             step="0.1"
@@ -90,7 +90,7 @@ function SIPInvesmentCalc() {
                                         />
                                     </div>
                                     <div className="flex flex-col p-2">
-                                        <label className="block mb-1 font-semibold py-2 dark:text-white">Tenure (years)</label>
+                                        <label className="block py-2 mb-1 font-semibold dark:text-white">Tenure (years)</label>
                                         <input
                                             type="number"
                                             value={tenureYears}
@@ -102,7 +102,7 @@ function SIPInvesmentCalc() {
                                     <div className="flex flex-col py-3 mt-2">
                                         <button
                                             onClick={handleSubmit}
-                                            className="block px-4 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
+                                            className="block px-2 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
                                         >
                                             Calculate SIP
                                         </button>
@@ -113,7 +113,7 @@ function SIPInvesmentCalc() {
 
                         <div className="items-center col-span-2 justify-center w-full h-full px-4 py-6 bg-[#fff] font-roboto rounded shadow-md  dark:bg-gray-700">
                             {result ? (
-                                <div className="w-full flex flex-col md:flex-row sm:flex-col sm:gap-4 gap-8 items-center justify-center">
+                                <div className="flex flex-col items-center justify-center w-full gap-8 md:flex-row sm:flex-col sm:gap-4">
                                     {/* Doughnut Chart */}
                                     <div className="w-full max-w-xs dark:text-[#fff]">
                                         <Doughnut data={chartData}/>
@@ -121,7 +121,7 @@ function SIPInvesmentCalc() {
 
                                     {/* Results */}
                                     <div className="w-full font-roboto">
-                                        <table className="min-w-full text-md border border-gray-300 dark:text-white text-center">
+                                        <table className="min-w-full text-center border border-gray-300 text-md dark:text-white">
                                             <thead className="bg-blue-100 dark:bg-green-600">
                                                 <tr>
                                                     <th className="px-4 py-2.5 border text-center">Description</th>
@@ -130,16 +130,16 @@ function SIPInvesmentCalc() {
                                             </thead>
                                             <tbody>
                                                 <tr className="border-b">
-                                                    <td className="p-2 border font-bold">Invested Amount</td>
-                                                    <td className="p-2 border font-semibold text-blue-600">₹{Number(result.investedAmount).toLocaleString()}</td>
+                                                    <td className="p-2 font-bold border">Invested Amount</td>
+                                                    <td className="p-2 font-semibold text-blue-600 border">₹{Number(result.investedAmount).toLocaleString()}</td>
                                                 </tr>
                                                 <tr className="border-b">
-                                                    <td className="p-2 border font-bold">Interest Earned</td>
-                                                    <td className="p-2 border font-semibold text-red-600">₹{Number(result.interestEarned).toLocaleString()}</td>
+                                                    <td className="p-2 font-bold border">Interest Earned</td>
+                                                    <td className="p-2 font-semibold text-red-600 border">₹{Number(result.interestEarned).toLocaleString()}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="p-2 border font-bold">Total Value</td>
-                                                    <td className="p-2 border font-semibold text-green-600">₹{Number(result.maturityAmount).toLocaleString()}</td>
+                                                    <td className="p-2 font-bold border">Total Value</td>
+                                                    <td className="p-2 font-semibold text-green-600 border">₹{Number(result.maturityAmount).toLocaleString()}</td>
                                                 </tr>
                                             </tbody>
                                         </table>

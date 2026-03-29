@@ -87,7 +87,7 @@ const OurTeams = () => {
                                         <img src={member.images.png} alt={member.images.alt}
                                             className="object-cover p-3 mx-auto rounded-full"
                                         />
-                                        <h3 className="text-[20px] uppercase font-roboto font-bold tracking-tight
+                                        <h3 className="text-[18px] uppercase font-roboto font-bold tracking-tight
                                          text-gray-900 dark:text-white hover:text-purple-700 dark:hover:text-green-500">
                                             {member.name}
                                         </h3>

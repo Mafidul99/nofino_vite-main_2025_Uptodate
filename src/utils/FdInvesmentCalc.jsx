@@ -42,7 +42,7 @@ function FdInvesmentCalc() {
     return (
         <div className="flex flex-col items-center min-h-screen p-6">
             <div className="bg-[#fff] dark:bg-gray-700 rounded-md shadow-md w-full max-w-[1200px] px-3 py-4">
-                <h1 className="text-[30px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
+                <h1 className="text-[22px] font-bold text-center dark:text-white uppercase underline text-gray-700 py-3">
                         FD Investment Plan (Compound Interest)</h1>
                 <div className="grid grid-cols-4 gap-4 px-3 py-3 md:grid-cols-2 md:gap-2 md:px-1 md:py-1">
                     <div className="items-center w-full col-span-2 p-6 mb-8 md:col-span-4 md:p-2">
@@ -80,7 +80,7 @@ function FdInvesmentCalc() {
                         </div>
                         <div className="items-center justify-center my-3 text-center">
                             <button
-                                className="px-4 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
+                                className="px-3 py-2 text-lg text-white transition bg-pink-600 rounded-lg shadow-md hover:bg-pink-400"
                                 onClick={calculateCompoundFD}
                             >
                                 Calculate FD
@@ -133,13 +133,13 @@ function FdInvesmentCalc() {
 
                     <div className="w-full col-span-4 pt-3 dark:text-white">
                         {result.length > 0 ? (
-                            <DataTable className="display rounded-md overflow-hidden"
+                            <DataTable className="overflow-hidden rounded-md display"
                             options={{
                                 pagination: true,
                                 responsive: true,
                             }}
                             >
-                                <thead className='text-white bg-green-600 rounded shadow items-center text-center'>
+                                <thead className='items-center text-center text-white bg-green-600 rounded shadow'>
                                     <tr>
                                        <th className="px-4 py-3">Tenure (Years)</th>
                                     <th className="px-4 py-3">Interest Earned (₹)</th>
@@ -148,7 +148,7 @@ function FdInvesmentCalc() {
                                 </thead>
                                 <tbody >
                                 {result.map((row) => (
-                                    <tr key={row.year} className="border-t text-center rounded-md">
+                                    <tr key={row.year} className="text-center border-t rounded-md">
                                         <td className="px-4 py-2">{row.year}</td>
                                         <td className="px-4 py-2">{row.interest}</td>
                                         <td className="px-4 py-2">{row.total}</td>

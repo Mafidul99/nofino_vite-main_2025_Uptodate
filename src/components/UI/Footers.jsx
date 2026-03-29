@@ -120,9 +120,8 @@ const Footers = () => {
                <div className="flex justify-start text-teal-600 lg:justify-center sm:justify-start">
                 <img src="assets/images/logo/logo-dark1.png" alt="mainLogo" />
               </div>
-              <p className="dark:text-[#D6D6D6] mt-3 lg:text-center lg:max-w-full max-w-md font-roboto text-[16px] leading-relaxed text-gray-600 sm:max-w-xs sm:text-left ">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-                cum itaque neque.
+              <p className="dark:text-[#D6D6D6] mt-3 lg:text-center lg:max-w-full max-w-md font-roboto text-[15px] leading-relaxed text-gray-600 sm:max-w-xs sm:text-left ">
+                Welcome to Nofino Rural Finance, empowering communities through accessible financial services. Together, let's build a brighter, more prosperous future.
               </p>
               <ul className="flex justify-center gap-6 mt-3 md:gap-6">
                 <li>
@@ -156,12 +155,12 @@ const Footers = () => {
             </div>
             <div className="grid grid-cols-4 col-span-2 gap-3 px-2 py-2 lg:p-4 md:p-3 lg:grid-cols-2 lg:col-span-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
               <div className="font-roboto text-[16px] sm:text-left">
-                <p className="text-[20px] font-roboto underline font-[600] dark:text-white text-gray-900">Main Menu</p>
+                <p className="text-[18px] font-roboto underline font-[600] dark:text-white text-gray-900">Main Menu</p>
                 <ul className="mt-3 space-y-4 text-sm ">
                   {mainMenu.map((mainMenus, index) => {
                     return (
                       <li key={index}>
-                        <Link className="text-gray-700 font-roboto capitalize text-[17px] 
+                        <Link className="text-gray-700 font-roboto capitalize text-[15px] 
                               transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={mainMenus.url}>
                           {mainMenus.name}
                         </Link>
@@ -171,12 +170,12 @@ const Footers = () => {
                 </ul>
               </div>
               <div className="font-roboto text-[16px]sm:text-left">
-                <p className="text-[20px] font-roboto underline font-[600] dark:text-white text-gray-900">Our Services</p>
+                <p className="text-[18px] font-roboto underline font-[600] dark:text-white text-gray-900">Our Services</p>
                 <ul className="mt-3 space-y-4 text-sm">
                   {ourServices.map((ourServ, index) => {
                     return (
                       <li key={index}>
-                        <Link className="text-gray-700 font-roboto capitalize text-[17px] 
+                        <Link className="text-gray-700 font-roboto capitalize text-[15px] 
                                           transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={ourServ.url}>
                           {ourServ.name}
                         </Link>
@@ -186,12 +185,12 @@ const Footers = () => {
                 </ul>
               </div>
               <div className="font-roboto text-[16px] sm:text-left">
-                <p className="text-[20px] font-roboto underline font-[600] dark:text-white text-gray-900">Helpful Links</p>
+                <p className="text-[18px] font-roboto underline font-[600] dark:text-white text-gray-900">Helpful Links</p>
                 <ul className="mt-3 space-y-4 text-sm">
                   {helpLink.map((helpLinks, index) => {
                     return (
                       <li key={index}>
-                        <Link className="text-gray-700 font-roboto capitalize text-[17px] 
+                        <Link className="text-gray-700 font-roboto capitalize text-[15px] 
                                             transition hover:text-green-600/75 dark:text-[#D6D6D6] dark:hover:text-white" to={helpLinks.url}>
                           {helpLinks.name}
                         </Link>
@@ -201,17 +200,17 @@ const Footers = () => {
                 </ul>
               </div>
               <div className="font-roboto text-[16px] sm:text-left w-full">
-                <p className="text-[20px] font-roboto underline font-[600] dark:text-white text-gray-900">Contact Us</p>
+                <p className="text-[18px] font-roboto underline font-[600] dark:text-white text-gray-900">Contact Us</p>
                 <ul className="w-full mt-3 space-y-4 text-sm">
                   {contUs.map((contacts, index) => {
                     return (
                       <li key={index}>
                         <Link className="flex items-center gap-1.5 hover:text-green-600/75 w-[100%]"
                           to={contacts.url}>
-                          <div className="shrink-0 dark:text-[#D6D6D6]  text-gray-900 shadow-sm text-[20px] hover:text-green-600/75" >
+                          <div className="shrink-0 dark:text-[#D6D6D6]  text-gray-900 shadow-sm text-[18px] hover:text-green-600/75" >
                             {contacts.icon}
                           </div>
-                          <span className="gird dark:text-[#D6D6D6] dark:hover:text-white font-roboto text-[16px] break-all text-gray-700 hover:text-green-600/75">
+                          <span className="gird dark:text-[#D6D6D6] dark:hover:text-white font-roboto text-[15px] break-all text-gray-700 hover:text-green-600/75">
                             {contacts.phone}
                             {contacts.addrs}
                             {contacts.email}

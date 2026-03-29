@@ -34,7 +34,7 @@ const OurService = () => {
                                             <img src={image} alt="" className='w-[100%] h-auto rounded-md' />                                               
                                         </div>                                        
                                         <hr  className='w-full py-2 mb-2 bg-transparent border-b-2 border-gray-400 border-dashed border-t-transparent'/> 
-                                        <p class="mb-3 text-gray-400 text-[15px] font-[500] font-roboto items-center text-center dark:text-[#D6D6D6]">
+                                        <p class="mb-3 text-gray-400 text-[14px] font-[500] font-roboto items-center text-center dark:text-[#D6D6D6]">
                                             {name}
                                         </p>
 

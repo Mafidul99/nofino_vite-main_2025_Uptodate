@@ -16,12 +16,11 @@ const FooterMenu = () => {
               <div className="col-md-6 col-lg-3">
                 <div className="widget">
                   <div className="about-company">
-                    <div className="footer-logo mb-10">
+                    <div className="mb-10 footer-logo">
                       <img src="assets/images/logo/logo-dark1.png" alt="Footer-logo" />
                     </div>
-                    <p className='text-white font-roboto text-[15px]'>Welcome to Nofino Rural Finance, empowering communities through accessible financial
-                      services.
-                      Together, let's build a brighter, more prosperous future.</p>
+                    <p className='text-white font-roboto text-[15px]'>Welcome to Nofino Rural Finance, empowering communities 
+                      through accessible financial services. Together, let's build a brighter, more prosperous future.</p>
                   </div>
                 </div>
               </div>
@@ -84,17 +83,17 @@ const FooterMenu = () => {
                   </div>
                 </div>
               </div>
-              <div className="row mt-3">
+              <div className="mt-3 row">
                 <div className="col-md-7">
-                  <div className="footer-logo2 pt-2 flex items-center justify-center">
+                  <div className="flex items-center justify-center pt-2 footer-logo2">
                     <img src="assets/images/footer/Footer-payment-icons.png" alt="Footer-logo" />
                   </div>
                 </div>
-                <div className="col-md-5 py-2 flex items-center ml-auto justify-center">
+                <div className="flex items-center justify-center py-2 ml-auto col-md-5">
                   <ul>
                     <li>
                       <NavLink to="/">
-                        <img src="assets/images/footer/google_play.png" className="googeimg pb-2"
+                        <img src="assets/images/footer/google_play.png" className="pb-2 googeimg"
                           alt="Google Play" />
                       </NavLink>
                       <NavLink to="/">
@@ -103,16 +102,16 @@ const FooterMenu = () => {
                       </NavLink>                        
                     </li>
                   </ul>
-                  <div className="flex px-2 items-center">
-                    <img src="assets/images/footer/iso-9001-logo.png" className="isoimag inline size-20" alt="ISOImage" />
-                        <img src="assets/images/footer/pngtree.png" className="isoimag inline size-15" alt="ISOImage" />
+                  <div className="flex items-center px-2">
+                    <img src="assets/images/footer/iso-9001-logo.png" className="inline isoimag size-20" alt="ISOImage" />
+                        <img src="assets/images/footer/pngtree.png" className="inline isoimag size-15" alt="ISOImage" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="footer-copyright-section items-center justify-center">
+        <div className="items-center justify-center footer-copyright-section">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-6">
@@ -121,7 +120,7 @@ const FooterMenu = () => {
                 </div>
               </div>
               <div className="col-sm-12 col-md-6">
-                <div className="footer-copyright-link text-white items-center justify-center">
+                <div className="items-center justify-center text-white footer-copyright-link">
                   <ul>
                     <li><NavLink to="/terms-conditions">Terms & Condition</NavLink></li>
                     <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>

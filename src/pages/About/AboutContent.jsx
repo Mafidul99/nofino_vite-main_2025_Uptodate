@@ -15,7 +15,7 @@ const AboutContent = () => {
                             <img src="/assets/images/about/ab-circle.png" alt="circle-thumb" className="w-[380px]" />
                         </div>
                     </div>
-                    <div className="font-roboto font-[25px] font[500] mb-[33px] py-[30px] text-gray-800">
+                    <div className="font-roboto font-[20px] font[500] mb-[33px] py-[30px] text-gray-800">
                         <div className="mb-[20px] justify-center items-center text-justify dark:text-white">
                             <p>Nofino Rural Finance Private Limited, headquartered in Mandia,
                                 Barpeta District, Assam, is dedicated to uplifting the needy, poor,
@@ -33,7 +33,7 @@ const AboutContent = () => {
                                 <img src="/assets/images/about/career-3.png" alt="circle-thumb" className="w-[80px]" />
                             </div>
                             <div className="w-full">
-                                <div className="text-[30px] tracking-[.9px] font-[800] mb-2 dark:text-white">
+                                <div className="text-[25px] tracking-[.9px] font-[800] mb-2 dark:text-white">
                                     <h4>Our Vission</h4>
                                 </div>
                                 <div className="mb-[20px] justify-center items-center text-justify dark:text-white">
@@ -49,11 +49,11 @@ const AboutContent = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex w-full items-center pt-3 pb-3 ml-9">
+                        <div className="flex items-center w-full pt-3 pb-3 ml-9">
                             <Link to="/contact" className=" flex text-white bg-gradient-to-r from-green-400 via-green-500
-                         to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none 
-                         focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg
-                          dark:shadow-green-800/80 font-medium rounded-lg text-[15px] px-4 py-3 text-center me-2 mb-2">
+                                to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none 
+                                focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg
+                                dark:shadow-green-800/80 font-medium rounded-lg text-[15px] px-3 py-2 text-center me-2 mb-2">
                                 More Contact Us
                                 <span className="inline items-center pl-[5px]"><HiArrowLongRight size={20} /></span>
                             </Link>

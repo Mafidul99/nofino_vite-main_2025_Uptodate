@@ -8,7 +8,7 @@ import TopbarDropdown from '../../../dropdowns/TopbarDropdown';
 const Topbar = () => {
     return (
         <>
-            <div className='items-center w-full py-2.5 bg-gray-900' >
+            <div className='items-center w-full py-0.5 bg-gray-900' >
                 <div className='flex mx-auto max-w-[1200px] w-full px-4 items-center'>
                     <div className='grid items-center w-full grid-cols-2 gap-1 sm:grid-cols-1'>
                         <div className='flex items-center text-[12px] font-roboto w-full sm:text-center sm:items-center sm:justify-center'>

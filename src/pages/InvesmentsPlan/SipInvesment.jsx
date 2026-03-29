@@ -22,13 +22,13 @@ const SipInvesment = () => {
       <section>
         <div className='flex items-center justify-center mt-[40px]  w-ful '>
           <div className='flex flex-wrap justify-between items-center mx-auto max-w-[1200px] w-full px-4 py-3'>
-            <div className='flex w-[100%] font-roboto text-[30px] tracking-[.9px] font-[200] dark:text-[#D6D6D6]'>
-              <span>Trusted Company</span>
+            <div className='flex w-[100%] font-roboto text-[20px] tracking-[.9px] font-[200] dark:text-[#D6D6D6]'>
+              <span>Trusted SIP</span>
             </div>
-            <div className='flex w-[100%] font-roboto text-[40px] tracking-[.9px] font-[800] mt-[-17px] dark:text-[#D6D6D6] uppercase'>
+            <div className='flex w-[100%] font-roboto text-[30px] tracking-[.9px] font-[800] mt-[-9px] dark:text-[#D6D6D6] uppercase'>
               <span>SIP (Systematic Investment Plan) Calculator </span>
             </div>
-            <div className='flex w-[100%] font-roboto text-[16px] tracking-[.45px] font-[300] dark:text-[#D6D6D6] mt-[4px]'>
+            <div className='flex w-[100%] font-roboto text-[15px] tracking-[.45px] font-[300] dark:text-[#D6D6D6]'>
               <span>Wealth management and insurance solutions for a secure tomorrow</span>
             </div>
           </div>
