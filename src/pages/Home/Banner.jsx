@@ -27,14 +27,14 @@ export const Banner = () => {
                                     <div className="flex flex-wrap justify-between items-center max-w-[1200px] px-2">
                                         <div className="items-center justify-center font-roboto">
                                             <div className="animate-fadeInDown delay-[6000]">
-                                                <p className="text-[35px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px] sm:pt-1 sm:pb-1">
+                                                <p className="text-[30px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px] sm:pt-1 sm:pb-1">
                                                     Simple & Secure Payment Process </p>
                                             </div>
                                             <div className="animate-fadeInDown">
-                                                <h2 className="text-[60px] font-bold capitalize text-gray-950 pb-3 sm:pb-1 lg:text-[45px] md:text-[40px] sm:text-[25px]">
+                                                <h2 className="text-[50px] font-bold capitalize text-gray-950 pb-3 sm:pb-1 lg:text-[45px] md:text-[40px] sm:text-[25px]">
                                                     Connecting Your Loan Needs </h2>
                                             </div>
-                                            <div className="flex font-semibold list-none text-[16px] md:hidden">                                                
+                                            <div className="flex font-semibold list-none text-[15px] md:hidden">                                                
                                                 <Link to="/apply-from" className="group relative inline-flex h-[calc(48px+8px)]  items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
                                                     <span className="z-10 pr-2 text-white">Apply Loan</span>
                                                     <div className="absolute right-1 inline-flex h-12 w-12 items-center hover:text-white justify-end rounded-full bg-green-700 transition-[width] group-hover:w-[calc(100%-8px)]">
@@ -58,14 +58,14 @@ export const Banner = () => {
                                     <div className="max-w-[1200px]">
                                         <div className="items-center justify-center font-roboto">
                                             <div className="animate-fadeInDown delay-[200]">
-                                                <p className="text-[35px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px]">
+                                                <p className="text-[30px] pt-4 pb-3 text-[#ffffffb4] lg:text-[23px] md:text-[18px]">
                                                     Simple & Secure Payment Process </p>
                                             </div>
                                             <div className="animate-fadeInDown">
-                                                <h2 className="text-[60px] font-bold capitalize text-gray-950 pb-3 lg:text-[45px] md:text-[40px] sm:text-[25px] ">
+                                                <h2 className="text-[50px] font-bold capitalize text-gray-950 pb-3 lg:text-[45px] md:text-[40px] sm:text-[25px] ">
                                                     Connecting Gold Loan Needs </h2>
                                             </div>
-                                            <div className="flex font-semibold list-none text-[16px] md:hidden">
+                                            <div className="flex font-semibold list-none text-[15px] md:hidden">
                                                 <Link to="/apply-from" className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
                                                     <span className="z-10 pr-2 text-white">Apply Loan</span>
                                                     <div className="absolute right-1 inline-flex h-12 w-12 items-center hover:text-white justify-end rounded-full bg-green-700 transition-[width] group-hover:w-[calc(100%-8px)]">
@@ -83,26 +83,18 @@ export const Banner = () => {
                             </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
+                            <img src="assets/images/carousel/slider10.png" className="d-block w-100" alt="Slider3" />
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
+                            <img src="assets/images/carousel/slider9.png" className="d-block w-100" alt="Slider4" />
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
+                            <img src="assets/images/carousel/slider7.png" className="d-block w-100" alt="Slider5" />
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
+                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider6" />
                         </div>
-                        <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
-                        </div>
-                        <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
-                        </div>
-                        <div className="carousel-item" data-bs-interval="6000">
-                            <img src="assets/images/carousel/slider3.jpg" className="d-block w-100" alt="Slider3" />
-                        </div>
+                        
                     </div>
                     <div className="carousel-indicators" >
                         <button aria-label="previous" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
@@ -115,9 +107,7 @@ export const Banner = () => {
                         <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 3" data-bs-slide-to="3" ></button>
                         <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 4" data-bs-slide-to="4" ></button>
                         <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 5" data-bs-slide-to="5" ></button>
-                        <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 6" data-bs-slide-to="6" ></button>
-                        <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 7" data-bs-slide-to="7" ></button>
-                        <button type="button" data-bs-target="#myCarousel" aria-label="carousel button 8" data-bs-slide-to="8" ></button>
+                        
                         <button aria-label="next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
                             className="carousel-control-next">
                             <span className="carousel-control-next-icon"></span>
