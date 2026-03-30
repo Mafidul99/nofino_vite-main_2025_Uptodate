@@ -35,7 +35,7 @@ export const Banner = () => {
                                                     Connecting Your Loan Needs </h2>
                                             </div>
                                             <div className="flex font-semibold list-none text-[15px] md:hidden">                                                
-                                                <Link to="/apply-from" className="group relative inline-flex h-[calc(48px+8px)]  items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
+                                                <Link to="/contact" className="group relative inline-flex h-[calc(48px+8px)]  items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
                                                     <span className="z-10 pr-2 text-white">Apply Loan</span>
                                                     <div className="absolute right-1 inline-flex h-12 w-12 items-center hover:text-white justify-end rounded-full bg-green-700 transition-[width] group-hover:w-[calc(100%-8px)]">
                                                         <div className="mr-3.5 flex items-center justify-center">
@@ -66,7 +66,7 @@ export const Banner = () => {
                                                     Connecting Gold Loan Needs </h2>
                                             </div>
                                             <div className="flex font-semibold list-none text-[15px] md:hidden">
-                                                <Link to="/apply-from" className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
+                                                <Link to="/contact" className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-green-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
                                                     <span className="z-10 pr-2 text-white">Apply Loan</span>
                                                     <div className="absolute right-1 inline-flex h-12 w-12 items-center hover:text-white justify-end rounded-full bg-green-700 transition-[width] group-hover:w-[calc(100%-8px)]">
                                                         <div className="mr-3.5 flex items-center justify-center">
