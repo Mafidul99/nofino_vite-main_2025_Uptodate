@@ -48,6 +48,7 @@ import LoanEMICalculator from './pages/Calculators/LoanEMICalculator'
 
 
 
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -57,7 +58,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
-        
       },
       {
         path: "/about",
