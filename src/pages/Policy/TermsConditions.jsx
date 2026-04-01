@@ -2,6 +2,7 @@ import React from 'react'
 
 const TermsConditions = () => {
   return (
+    <>
     <div className='flex items-center justify-center w-full '>
       <div className='max-w-[1200px] w-full items-center justify-center px-4 my-4 mx-auto'>
         <div className="w-full px-5 py-5 text-gray-800 rounded-md bg-slate-100 dark:bg-gray-700 dark:text-white">
@@ -41,6 +42,7 @@ const TermsConditions = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
