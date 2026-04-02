@@ -41,12 +41,13 @@ const TopbarDropdown = () => {
 
             {isOpen && (
                 <div className="origin-top-left absolute left-0  mt-2 w-60 z-50 rounded-md shadow-lg bg-[#fff] ring-1 ring-black ring-opacity-5
-                    focus:outline-none dark:bg-gray-700 " role="menu" >
+                    focus:outline-none dark:bg-gray-700 " role="menu" onMouseLeave={() => setIsOpen(false)}>
                     <div className="py-1" role="none">
                         {calLinks.map((calLink, index) => {
                             return (
                                 <Link to={calLink.url}
-                                    className="block px-4 py-2 text-sm text-gray-700 font-roboto dark:text-white dark:hover:text-green-500 hover:text-green-500" role="menuitem" key={index}>
+                                    className="block px-4 py-2 text-sm text-gray-700 font-roboto dark:text-white dark:hover:text-green-500 hover:text-green-500" role="menuitem" 
+                                    key={index} >
                                     {calLink.name}
                                 </Link>
                             );
