@@ -91,16 +91,6 @@ const MobileMenu = () => {
                 <div className="bg-[#f4f4f4] lg:bg-white shadow-md absolute top-0 left-0 w-[55%]  dark:bg-gray-700 transition duration-500">
                     <div className="w-full border-t border-gray-200 shadow-md lg:inline-block font-roboto ">
                         <nav className="w-full">
-                            {/* {menuItems.map((item) => (
-                                <Link
-                                    key={item}
-                                    href={item.url}
-                                    className="inline-block font-medium text-gray-700 hover:text-green-600"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {item.name}
-                                </Link>
-                            ))} */}
                              <MobileHeader onClick={(e) => {e.stopPropagation}}/>
                         </nav>
                     </div>
